@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>确认订单</title>
+	<link rel="shortcut icon" href="images/icon/favicon.ico">
+	<meta charset="utf-8">
+	<meta name="keywords" content="印刷 平台 创意 服务" />
+	<link rel="stylesheet" type="text/css" href="style/reset.css">
+	<link rel="stylesheet" type="text/css" href="style/main.css">
+	<link rel="stylesheet" type="text/css" href="style/order.css">
+</head>
+<body>
+	<div class="headerBar">
+		<div class="topBar">
+			<div class="comWidth">
+				<div class="leftArea fl">
+					<a href="javascript:void(0)" id="addFav" class="collection">送至：江苏省</a>
+				</div>
+
+				<ul class="rightArea fr">
+						<li class="user_center">
+							<i class="icon_img"><img src="images/icon/icon_usercenter.png"></i>
+							<a href="user/user-main.html">个人中心</a>
+							<div style="display:none">
+								<a href="#">我的模板</a>
+								<a href="#">个人信息</a>
+								<a href="#">我的订单</a>
+							</div>
+						</li>
+						<li class="shop_car">
+							<i class="icon_img"><img src="images/icon/icon_shopcar.png"></i>
+							<a href="">购物车</a>
+						</li>
+						<li class="help"><a href="">帮助</a></li>
+						<li><a href="#">联系我们</a></li>
+				</ul>
+				<!--用户-->
+				<ul class="inLogin fr">
+					<li class="loginOk" style="display: none">
+						<a href=""></a>
+						<a href="javascript:void(0)">退出</a>
+					</li>
+					<li class="loginResiter">
+						<a href="login.html?id=1">Hi ~ [登录]</a>
+						<a href="login.html?id=2">[注册]</a>
+					</li>
+					<li class="tdesigner">
+						<i class="icon_img"><img src="images/icon/icon_designcenter.png"></i>
+						<a href="#">设计师入口</a>
+					</li>
+				</ul>
+
+			</div>
+		</div>
+		<div class="logoBar">
+			<div class="comWidth">
+				<div class="logo fl">
+					<a href="index.html">
+						<img src="images/logo.png" alt="图腾网" height="60">
+					</a>
+				</div>
+				<div class="stepBar fr">
+					<ul>
+						<li class="step-li finished">
+							<a href="#">查看购物车</a>
+							<i class="step-ball"></i>
+						</li>
+						<li class="step-li finished">
+							<a href="#">确认订单</a>
+							<i class="step-ball"></i>
+						</li>
+						<li class="step-li">
+							<a href="#">成功提交订单</a>
+							<i class="step-ball"></i>
+						</li>
+						<li class="step-li">
+							<a href="#">评价</a>
+							<i class="step-ball"></i>
+						</li>
+					</ul>					
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="mainContainer">
+		<div class="orderAdress comWidth order">
+			<h4>确认订单信息</h4>
+			<a href="javascript:void(0)" class="add">新增收货地址</a>
+			<div class="adress-section">
+				<h4>收件人信息</h4>
+				<ul>
+					<li class="take active">
+						<div class="take-name fl">杭梦栩</div>
+						<div class="take-address fl">江苏省苏州市工业园区 娄葑镇中信大厦128号 加城大厦F5-D7</div>
+						<div class="take-phone fl">185*****2519</div>
+					</li>
+					<li class="take ">
+						<div class="take-name fl">杭梦栩</div>
+						<div class="take-address fl">江苏省苏州市工业园区 娄葑镇中信大厦128号 加城大厦F5-D7</div>
+						<div class="take-phone fl">185*****2519</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="orderPayment comWidth order">
+			<h4>支付方式</h4>
+			<ul>
+				<li class="payment active">
+					<a href="javascript:void(0)">
+						支付宝支付
+					</a>
+				</li>
+				<li class="payment">
+					<a href="javascript:void(0)">
+						微信支付
+					</a>
+				</li>
+				<li class="payment">
+					<a href="javascript:void(0)">
+						银联支付
+					</a>
+				</li>
+				<li class="payment">
+					<a href="javascript:void(0)">
+						余额支付
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="orderProduct comWidth order">
+			<h4>送货清单</h4>
+		</div>
+		<div class="orderInvoice comWidth order">
+			<h4>发票信息</h4>
+		</div>
+		<div class="orderCoupon comWidth order">
+			<h4>使用优惠</h4>
+		</div>
+	</div>
+	<footer>
+		<div class="comWidth">
+			<p>
+				<a target="_blank" href="#">关于我们</a>|
+				<a target="_blank" href="#">联系我们</a>|
+				<a target="_blank" href="#">媒体报道</a>|
+				<a target="_blank" href="#">商业合作</a>|
+				<a target="_blank" href="#">版权声明</a>
+			</p>
+			<p>CopyRight?2005-2016 图腾 苏ICP备05005325号-2 经营许可证编号:苏ICP备05005325号 企业营业执照：320205000241790</p>
+		</div>
+	</footer>
+</body>
+<script type="text/javascript" src="lib/jquery-3.1.0.min.js"></script>
+<script type="text/javascript" src='js/public.js'></script>
+<script>
+	$(document).ready(function(){
+		tab_adress();
+	})
+	function tab_adress(){
+		$('.take').click(function(){
+			$(this).siblings().removeClass('active');
+			$(this).addClass('active');
+		})
+		$('.payment').click(function(){
+			$(this).siblings().removeClass('active');
+			$(this).addClass('active');
+		})
+	}
+</script>
+</html>

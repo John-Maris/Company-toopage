@@ -1,0 +1,157 @@
+.logoBar
+{
+	background-color: #f9f9f9;
+	border:none;
+	height: 130px;
+}
+.headerBar .logoBar .stepBar
+{
+	display: inline-block;
+	margin-top: 50px;
+	overflow: hidden;
+}
+.headerBar .logoBar .stepBar .step-li
+{
+	width: auto;
+	height: 50px;
+	float: left;
+	position: relative;
+	margin-right: 100px;
+	text-align: center;
+}
+.headerBar .logoBar .stepBar .step-li a
+{
+	display: block;
+	font-size: 12px;
+	color: #ccc; 
+}
+.headerBar .logoBar .stepBar .step-li .step-ball
+{
+	margin-top: 10px;
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	border-radius: 10px;
+	background-color: #ccc;
+}
+.headerBar .logoBar .stepBar .step-li .step-ball::after
+{
+	width: 150px;
+	height: 6px;
+	content: '';
+	background-color: inherit;
+	position: absolute;
+	top: 32px;
+	left: 28px;
+}
+.headerBar .logoBar .stepBar .step-li .step-ball::after:last-child
+{
+	display: none;
+}
+/*状态属性值*/
+.headerBar .logoBar .stepBar .finished a
+{
+	color:#23598f;
+}
+.headerBar .logoBar .stepBar .finished .step-ball
+{
+	background-color: #23598f;
+}
+
+.mainContainer
+{
+	background-color: #fff;
+	padding-top: 30px;
+}
+.mainContainer .order
+{
+	margin-top: 20px;
+	position: relative;
+	overflow: hidden;
+	border-bottom: 1px solid #ccc;
+
+}
+.mainContainer .orderAdress h4
+{
+	font-size: 15px;
+}
+.mainContainer .orderAdress .add
+{
+	display: inline-block;
+	position: absolute;
+	top: 0;
+	right: 0;
+	color: #0989ce;
+}
+.mainContainer .orderAdress .adress-section
+{
+	margin-top: 32px;
+	margin-left: 44px;
+}
+.mainContainer .orderAdress .adress-section h4
+{
+	margin-bottom: 20px;
+}
+.mainContainer .orderAdress .adress-section .take
+{
+	float: left;
+	margin-bottom: 20px;
+	position: relative;
+}
+.mainContainer .orderAdress .adress-section .take .take-name
+{
+	width: 140px;
+	height: 26px;
+	overflow: hidden;
+	line-height: 26px;
+	text-align: center;
+	border:2px solid #e5e5e5;
+	cursor: pointer;
+}
+.mainContainer .orderAdress .adress-section .take.active:after
+{
+	content: '默认地址';
+	width: 60px;
+	height: 20px;
+	font-size: 12px;
+	text-align: center;
+	line-height: 20px;
+	color: #fff;
+	background-color: #ccc;
+	position: absolute;
+	top: 2px;
+	right: -100px;
+}
+.mainContainer .orderAdress .adress-section .take.active .take-name
+{
+	border-color: #0989ce;
+}
+.mainContainer .orderAdress .adress-section .take .take-address,
+.mainContainer .orderAdress .adress-section .take .take-phone
+{
+	height: 26px;
+	line-height: 26px;
+	margin-left: 20px;
+}
+/*支付方式*/
+.orderPayment .payment
+{
+	margin-top: 20px;
+	margin-left: 43px;
+	margin-bottom: 20px;
+	float: left;
+	width:116px;
+	height: 26px;
+	overflow: hidden;
+	line-height: 26px;
+	text-align: center;
+	border:2px solid #e5e5e5;
+}
+.orderPayment .payment.active
+{
+	border-color: #0989ce;
+}
+.orderPayment .payment.active a
+{
+	color: #000;
+}

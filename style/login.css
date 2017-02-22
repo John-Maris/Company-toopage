@@ -1,0 +1,344 @@
+/*logo*/
+a:hover{color:#23598f;}
+.header{
+	width: 100%;
+	height: auto;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.header a{
+	width:148px;
+	height: 60px; 
+	display: block;
+}
+.content{
+	width: 100%;
+	height:auto;
+	position: relative;
+	overflow: hidden;
+}
+.content .banner_img img
+{
+	display: block;
+	width: 100%;
+	min-width: 1280px;
+}
+
+/*登录和注册*/
+.loginBox,.registerBox{
+	width: 350px;
+	height: 350px;
+	background-color: #fff;
+	position: absolute;
+	top:0;
+	left: 60%;
+}
+
+/*登录输入部分的框架*/
+.loginBox .loginFrame
+{
+	width:250px;
+	height: 220px;
+	margin: auto;
+	margin-top: 36px;
+}
+.loginBox .loginFrame span
+{
+	font-size:1em;
+}
+.loginBox .loginFrame .input_frame
+{
+	margin-top: 15px;
+	position: relative;
+	overflow: hidden;
+}
+.loginBox .loginFrame .input_frame .input_name,
+.loginBox .loginFrame .input_frame .input_password
+{
+	width: 205px;
+	height: 40px;
+	background-color: #f6f6f6;
+	padding: 0 0 0 45px;
+	font:14px/25px 'Microsoft Yahei';
+	color: #333;
+	-webkit-transition: background-color .3s ease,border-radius .3s ease,box-shadow .3s ease;
+	-moz-transition: background-color .3s ease,border-radius .3s ease,box-shadow .3s ease;
+	-o-transition: background-color .3s ease,border-radius .3s ease,box-shadow .3s ease;
+	-ms-transition: background-color .3s ease,border-radius .3s ease,box-shadow .3s ease;
+	transition: background-color .3s ease,border-radius .3s ease,box-shadow .3s ease;
+}
+.loginBox .loginFrame .input_frame .input_name:focus,
+.loginBox .loginFrame .input_frame .input_password:focus
+{
+	background-color: #fff;
+	border-radius: 5px;
+	box-shadow:inset 0 0 3px #000;
+}
+.loginBox .loginFrame .input_frame .icon_un
+{
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	left: 0px;
+	background: url(../images/icon/icon_login_username.png);
+}
+.loginBox .loginFrame .input_frame .icon_pw
+{
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	left: 0px;
+	background: url(../images/icon/icon_login_password.png);
+}
+.loginBox .loginFrame .input_frame .login_btn,
+.registerBox .input_frame .register_btn
+{
+	width: 250px;
+	height: 40px;
+	background-color: #23598f;
+	text-align: center;
+	margin-top: 15px;
+	font:16px/40px 'Microsoft Yahei';
+	color: #fff;
+	-webkit-transition: background-color .3s ease;
+	-moz-transition: background-color .3s ease;
+	-o-transition: background-color .3s ease;
+	-ms-transition: background-color .3s ease;
+	transition: background-color .3s ease;
+	cursor: pointer;
+	border-radius: 10px;
+}
+.loginBox .loginFrame .input_frame .login_btn:hover,
+.registerBox .input_frame .register_btn:hover
+{
+	background-color: #09a3d1;
+}
+.loginBox .loginFrame .input_frame .login_qq
+{
+	background: url(../images/icon/icon_login_qq.png) no-repeat;
+	padding-left: 18px;
+}
+.loginBox .loginFrame .input_frame .login_wechat
+{
+	margin-left: 50px;
+	background: url(../images/icon/icon_login_wechat.png) no-repeat;
+	padding-left: 18px;
+}
+.loginBox .tab_txt
+{
+	margin-top:50px;
+	margin-left: 170px;
+	font-size: 15px;
+}
+.tab_txt a:hover
+{
+	color:#23598f;
+}
+/*--------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*注册框*/
+.registerBox .registerFrame
+{
+	width: 100%;
+	height: 300px;
+	background-color:#fff;
+	position: relative;
+	margin-top: 36px;
+}
+.registerBox .registerFrame .phone_frame
+{
+	width: 250px;
+	height: 20px;
+	margin-left: 50px;
+	position: absolute;
+}
+.registerBox .registerFrame .phone_frame span
+{
+	font-size:1em;
+}
+.registerBox .registerFrame .phone_frame .input_frame
+{
+	margin-top: 15px;
+	position: relative;
+	overflow: hidden;
+}
+.registerBox .registerFrame .phone_frame .input_frame .input_phone
+{
+	width: 205px;
+	height: 40px;
+	background-color: #f6f6f6;
+	padding: 0 0 0 45px;
+	font:14px/25px 'Microsoft Yahei';
+	color: #333;
+	border-radius: 0;
+}
+.registerBox .registerFrame .phone_frame .input_frame .input_phone,
+.registerBox .registerFrame .phone_frame .input_frame .input_password
+{
+	width: 205px;
+	height: 40px;
+	background-color: #f6f6f6;
+	padding: 0 0 0 45px;
+	font:14px/25px 'Microsoft Yahei';
+	color: #333;
+	border-radius: 0;
+	-webkit-transition: background-color .3s ease,border-radius .3s ease,box-shadow .3s ease;
+	-moz-transition: background-color .3s ease,border-radius .3s ease,box-shadow .3s ease;
+	-o-transition: background-color .3s ease,border-radius .3s ease,box-shadow .3s ease;
+	-ms-transition: background-color .3s ease,border-radius .3s ease,box-shadow .3s ease;
+	transition: background-color .3s ease,border-radius .3s ease,box-shadow .3s ease;
+}
+.registerBox .registerFrame .phone_frame .input_frame .input_phone:focus,
+.registerBox .registerFrame .phone_frame .input_frame .input_password:focus
+{
+	background-color: #fff;
+	border-radius: 5px;
+	box-shadow:inset 0 0 3px #000;
+}
+.registerBox .registerFrame .phone_frame .input_frame .icon_phone
+{
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	left: 0px;
+	background: url(../images/icon/icon_login_phone.png);
+}
+.registerBox .registerFrame .phone_frame .input_frame .icon_pw
+{
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	left: 0px;
+	background: url(../images/icon/icon_login_password.png);
+}
+.registerBox .registerFrame .phone_frame .input_frame .get_code
+{
+	width: 115px;
+	height: 40px;
+	background-color: #f6f6f6;
+	text-align: center;
+	font-size: 15px;
+}
+.registerBox .registerFrame .phone_frame .input_frame .post_code
+{
+	width: 115px;
+	height: 40px;
+	border-radius: 10px;
+	color: #fff;
+	background-color: #23598f;
+	font-size: 15px;
+	cursor: pointer;
+}
+.registerBox .registerFrame .phone_frame .input_frame .post_code:hover
+{
+	opacity: .8;
+}
+.registerBox .registerFrame .input_frame .register_btn
+{
+	margin-top: 0 !important;
+}
+.unchecked
+{
+	background-color: #f6f6f6 !important;
+	color: #ccc !important;
+	cursor:default;
+	pointer-events: none;
+}
+.registerBox .tab_txt
+{
+	font-size: 15px;
+	margin-top: 10px;
+}
+
+/*设置弹出层*/
+#re-layer{
+	width: 600px;
+	height: 500px;
+	background-color:#fff;
+	display: none;
+	overflow: hidden;
+}
+#re-layer .reContent{
+	width: 400px;
+	margin:auto;
+	margin-top: 60px;
+	height: auto;
+}
+#re-layer .reContent .re-layer-ul
+{
+	width: 100%;
+	height: auto;
+}
+#re-layer .reContent .re-layer-ul .re-layer-li
+{
+	width: 398px;
+	height: 48px;
+	border:1px solid #cbcbcb;
+	margin-bottom: 30px;
+	position: relative;
+}
+#re-layer .reContent .re-layer-ul .re-layer-li:last-child
+{
+	width: 398px;
+	height: 48px;
+	background-color: #23598f;
+	border-radius: 10px;
+	text-align: center;
+}
+#re-layer .reContent .re-layer-ul .re-layer-li .icon-com
+{
+	width: 16px;
+	height: 16px;
+	position: relative;
+	top:-32px;
+	left: 405px;
+	background-image: url(../images/icon/icon_login_com.png);
+	display: none;
+
+}
+#re-layer .reContent .re-layer-ul .re-layer-li:last-child:after
+{
+	content: '';
+}
+#re-layer .reContent .re-layer-ul .re-layer-li .re-layer-listname
+{
+	width: 95px;
+	height: 46px;
+	line-height: 46px;
+	text-align: left;
+	padding-left: 20px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	color: #000;
+	font-size: 14px;
+	font-weight: bold;
+
+}
+#re-layer .reContent .re-layer-ul .re-layer-li input
+{
+	width: 305px;
+	height: 48px;
+	line-height: 48px;
+	font-size: 1em;	
+	margin-left: 95px;
+	overflow: hidden;
+}
+
+#re-layer .reContent .re-layer-ul .re-layer-li input[type=submit]
+{
+	font-family: 'Microsoft Yahei';
+	color: #fff;
+	font-size:16px;
+	margin-left: 0px;
+	cursor: pointer;
+}
+#re-layer .reContent .re-layer-ul .re-layer-li .re-layer-tip
+{
+	position: absolute;
+	top: 53px;
+	left: 0;
+	font-size: 11px;
+	color: #ccc;
+	background:url(../images/icon/icon_login_tip.png) left no-repeat;
+	padding-left: 22px;
+}

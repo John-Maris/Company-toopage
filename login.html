@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>登录</title>
+  <meta charset="utf-8">
+  <link rel="shortcut icon" href="images/icon/favicon.ico">
+  <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+  <meta name="viewport" content="width=device-width,user-scalable=yes">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><!--优先使用IE最新版本和chorme-->
+  <meta name="renderer" content="webkit"><!--360使用webkit内核-->
+  <meta http-equiv="Cache-Control" content="no-siteapp"><!--禁止百度转码-->
+  <meta name="keywords" content="印刷 平台 创意 服务" />
+  <link rel="shortcut icon" href="images/icon/favicon.ico">
+  <link rel="stylesheet" type="text/css" href="style/reset.css">
+  <link rel="stylesheet" type="text/css" href="style/main.css">
+  <link rel="stylesheet" type="text/css" href="style/login.css">
+  <script src="lib/jquery-3.1.0.min.js"></script>
+  <script type="text/javascript" src='js/public.js'></script>
+  <script src="lib/layer/layer.js"></script>
+</head>
+  <body>
+    <div class="header">
+    	<div class="logo comWidth">
+    		<a href="index.html">
+          <img class="logo" src="images/logo.png" height="60" />
+        </a>
+   		</div>
+    </div>
+<!--============================================================-->
+	<div class="content">
+    <div class="banner_img">
+      <img src="images/pages/login/banner.jpg">
+    </div>
+		 <div class="loginBox">
+        <div class="loginFrame">
+          <span>密码登录</span>
+          <div class="input_frame">
+            <i class="icon_un"></i>
+            <input type="text" name="username" value="请输入手机号/邮箱/用户名" class="input_name" required="required" onfocus="this.value=''" onblur="if(this.value==''){this.value='请输入手机号/邮箱/用户名'}">
+          </div>
+          <div class="input_frame">
+            <i class="icon_pw"></i>
+            <input type="password" name="password" class="input_password">
+          </div>
+          <div class="input_frame">
+            <input type="submit"  class="login_btn" value="登录">
+          </div>
+          <div class="input_frame">
+            <a href="javascript:void(0)" class="login_qq">QQ登录</a>
+            <a href="javascript:void(0)" class="login_wechat">微信登录</a>
+          </div>
+        </div>
+        <div class="tab_txt">
+          <a href="javascript:void(0)" class="tab_to_register">免费注册</a>
+          <a href="">忘记密码</a>
+        </div>
+    	</div>
+      <!--登录框结束-->
+      <!--注册框开始-->
+      <div class="registerBox" style="display:none">
+          <div class="registerFrame">
+            <div class="phone_frame">
+            <span>手机号注册</span>
+              <div class="input_frame">
+                <i class="icon_phone"></i>
+                <input type="text" name="phone" value="请输入手机号" class="input_phone" onfocus="this.value=''" pattern="[0-9]" required="required" onblur="if(this.value==''){this.value='请输入手机号'}">
+              </div>
+              <div class="input_frame">
+                <input type="text" name="get" class="get_code fl" value="输入验证码" maxlength="6" onfocus="this.value=''" onblur="if(this.value==''){this.value='输入验证码'}">
+                <input type="submit" name="post" class="post_code fr" value="获取验证码">
+              </div>
+              <div class="input_frame" style="margin-top: 50px;">
+                <input type="checkbox"><a href="#">阅读并接受《图腾用户协议》</a>
+              </div>
+              <div class="input_frame">
+                <input type="button"  class="register_btn unchecked" value="下一步">
+              </div>
+              <div class="tab_txt">
+                <a href="javascript:void(0)" class="tab_to_login fr">立即登录</a>
+              </div>
+            </div>
+          </div>
+      </div>
+  </div>
+<!--============================================================-->
+<!--============================================================-->
+   <footer>
+		<div class="comWidth">
+			<p>
+				<a target="_blank" href="#">关于我们</a>|
+				<a target="_blank" href="#">联系我们</a>|
+				<a target="_blank" href="#">媒体报道</a>|
+				<a target="_blank" href="#">商业合作</a>|
+				<a target="_blank" href="#">版权声明</a>
+			</p>
+			<p>CopyRight?2005-2016 图腾 苏ICP备05005325号-2 经营许可证编号:鄂ICP备05005325号 企业营业执照：320205000241790</p>
+		</div>
+	</footer>
+
+  <div id="re-layer">
+    <div class="reContent">
+      <ul class="re-layer-ul">
+        <li class="re-layer-li">
+            <p class="re-layer-listname" style="letter-spacing: 9px;">用户名</p>
+            <input type="text" name="username" placeholder="您的账户名和登录用名">
+            <div class="icon-com"></div>
+            <span class="re-layer-tip">支持中文、字母、数字、“—”、“_”组合，4-20个字符</span>
+        </li>
+        <li class="re-layer-li">
+           <p class="re-layer-listname" style="letter-spacing: 29px;">邮箱</p>
+           <input type="text" name="usermail" placeholder="输入您的邮箱">
+           <div class="icon-com"></div>
+           <span class="re-layer-tip">输入邮箱便于上传文件</span>
+        </li>
+         <li class="re-layer-li">
+         <p class="re-layer-listname">设置密码</p>
+          <input type="password" name="password" placeholder="至少试用两种字符">
+          <div class="icon-com"></div>
+          <span class="re-layer-tip">建议使用字母、数字和符号两种以上的组合，6-20个字符</span>
+        </li>
+         <li class="re-layer-li">
+         <p class="re-layer-listname">确认密码</p>
+          <input type="password" name="com-password" placeholder="再次输入密码">
+          <div class="icon-com"></div>
+          <span class="re-layer-tip">请再次输入密码</span>
+        </li>
+         <li class="re-layer-li">
+          <input type="submit" name="register" value="注 册">
+        </li>
+      </div>
+    </div>
+  </div>
+
+  </body>
+
+  <script>
+  $(document).ready(function(){
+
+    var w_width = $(window).width();
+    var w_height = $(window).height();
+    var d_height = $(document).height();
+    getParam();
+    setcss();
+    setFooter(w_height,d_height);
+
+    $('.re-layer-li input[name=username]').change(function(){
+      set_username(this);
+    })
+    //判断用户名输入是否规范
+    $('.re-layer-li input[name=usermail]').change(function(){
+      set_email(this);
+    })
+    //判断邮箱输入是否规范
+    $('.re-layer-li input[name=password]').change(function(){
+      set_password(this);
+    })
+    //判断密码输入是否规范
+    $('.re-layer-li input[name=com-password]').change(function(){
+      set_com_password(this);
+    })
+    //判断确认密码是否输入规范
+    $('.re-layer-li input[name=register]').bind('click',function(){
+      register_confirm(this);
+    })
+    $('.input_phone').change(function(){
+        input_Nan(this);
+    })//当手机号用户输入时判断是否为数字
+
+    $('.register_btn').click(function(){
+      layer_moudle();
+    })
+    //当点击注册按钮弹出输入框
+    $('.input_frame input[type=checkbox]').click(function(){
+          user_agreement();
+    })
+    $('.tab_to_register').click(function(){
+      $('.loginBox').fadeOut(200);
+      $('.registerBox').fadeIn(300);
+      $('title').html('注册')
+
+    })
+    $('.tab_to_login').click(function(){
+      $('.registerBox').fadeOut(200);
+      $('.loginBox').fadeIn(300);
+      $('title').html('登录')
+    })
+    $('.post_code').click(function(){
+      var num = 30;
+      var autotime =  setInterval(function(){
+        if (num>0) {
+            num--;
+            $('.post_code').val(num+'s'+'后重新获取')
+            $('.post_code').css({'background-color':'#f6f6f6','color':'#ccc','cursor':'default'})
+        }
+        else
+        {
+          num = 0;
+          $('.post_code').val('获取验证码')
+          $('.post_code').css({'background-color':'#0989ce','color':'#fff','cursor':'pointer'})
+          clearInterval(this);
+        }
+      },1000) 
+    })
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    function user_agreement(){
+      if($('.input_frame input[type=checkbox]').is(':checked'))
+      {
+        $('.register_btn').removeClass('unchecked')
+      }
+      else
+      {
+        $('.register_btn').addClass('unchecked')
+      }
+    }
+    function getParam(){
+      c1=window.location.href.split("?")[1]; //得到id=楼主
+      c2=c1.split("=")[1]; //得到楼主
+      console.log(c2);
+      if(c2>1)
+      {
+        $('.loginBox').css('display','none')
+        $('.registerBox').css('display','block')
+      }
+      else
+      {
+        $('.registerBox').css('display','none')
+        $('.loginBox').css('display','block')
+      }
+    }
+    function setcss()
+    {
+      loginBox = ($('.content').height()-$('.loginBox').height())/2;
+      registerBox = ($('.content').height()-$('.registerBox').height())/2;
+      console.log(registerBox);
+      $('.loginBox').css('top',loginBox);
+      $('.registerBox').css('top',registerBox);
+      console.log('window'+w_height)
+      console.log('document'+d_height)
+      
+
+    }
+    function layer_moudle(){
+      layer.open({
+        type:1,
+        title:false,
+        area:['auto','auto'],
+        content:$('#re-layer')
+
+      })
+    }
+  function setFooter(w,d){
+      if(w>d)
+      {
+        $('footer').css('margin-top',w-d);
+
+      }
+      else if(d>w)
+      {
+        $('footer').css('margin-top',d-w);
+        $('body').css('overflow','hidden');
+      }
+    }
+    
+  })
+  function set_username (obj)
+  { 
+    var val = obj.value.length;
+    var tip = $(obj).siblings('.re-layer-tip')
+    var com = $(obj).siblings('.icon-com')
+    var txt_4 = '用户名小于4个字符';
+    var txt_20 = '用户名大于20个字符'
+    com.hide();
+    tip.show();
+    console.log(tip)
+    if(val<4)
+    {
+      tip.html(txt_4);
+      tip.css({'color':'#cc0000','background-image':'url(./images/icon/icon_login_tip_wrong.png)'});
+    }
+    else if(val>20)
+    {
+      tip.html(txt_20)
+      tip.css({'color':'#cc0000','background-image':'url(./images/icon/icon_login_tip_wrong.png)'});
+    }
+    else
+    {
+      com.show();
+      tip.hide();   
+    }
+  }
+  function set_email(obj)
+  {
+    var val = obj.value;
+    var tip = $(obj).siblings('.re-layer-tip')
+    var com = $(obj).siblings('.icon-com')
+    var pattern= /^([a-zA-Z0-9]+[_|\_|\.]?)*[a-zA-Z0-9]+@([a-zA-Z0-9]+[_|\_|\.]?)*[a-zA-Z0-9]+\.[a-zA-Z]{2,3}$/;//邮箱格式-正则表达式
+    var bool = pattern.test(val)
+    var txt_email = '请输入正确的邮箱格式';
+    com.hide();
+    tip.show();
+    if(!bool)
+    {
+      tip.html(txt_email)
+      tip.css({'color':'#cc0000','background-image':'url(./images/icon/icon_login_tip_wrong.png)'});
+    }
+    else
+    {
+      com.show();
+      tip.hide();
+    }
+  }
+  function set_password(obj)
+  {
+    var val = obj.value;
+    var val_l = val.length;
+    var tip = $(obj).siblings('.re-layer-tip')
+    var com = $(obj).siblings('.icon-com')
+    var pattern= /^(?![^a-zA-Z]+$)(?!\D+$)/;//密码格式
+    var bool = pattern.test(val)
+    var txt_6 = '密码小于6个字符';
+    var txt_form = '密码必须包含数字和字母';
+     if(val_l<6)
+     {
+        tip.show();
+        tip.html(txt_6)
+        tip.css({'color':'#cc0000','background-image':'url(./images/icon/icon_login_tip_wrong.png)'});
+     }
+     if(!bool)
+     {
+        tip.show();
+        tip.html(txt_form);
+        tip.css({'color':'#cc0000','background-image':'url(./images/icon/icon_login_tip_wrong.png)'});
+     }
+     if(bool&&6<val_l<20)
+     {
+      tip.hide();
+      com.show();
+
+     }
+  }
+  function set_com_password(obj)
+  {
+    var val = obj.value;
+    var pre = $(obj).parent().prev().find('input[name=password]')
+    var tip = $(obj).siblings('.re-layer-tip')
+    var com = $(obj).siblings('.icon-com')
+    var pattern= pre.val();//密码格式
+    var txt_com = '两次密码输入不一致';
+    console.log(pattern);
+    console.log(val);
+     if(val !== pattern)
+     {
+        tip.show();
+        tip.html(txt_com);
+        tip.css({'color':'#cc0000','background-image':'url(./images/icon/icon_login_tip_wrong.png)'});
+     }
+     else if(val = pattern)
+     {
+      tip.hide();
+      com.show();
+     }
+  }
+
+  function register_confirm(obj)
+  {
+    var $com = $('.re-layer-li .icon-com');
+    if(typeof($com.attr('display')) == 'undefined'){
+      //放置Ajax
+      alert('注册成功');
+      reset();
+
+    }
+    else
+    {
+      layer.open({
+        type:1,
+        title:'提示',
+        content:'请全部填写完整'
+      })
+    }
+  }
+
+  function reset(){
+    $('.re-layer-li input').not('[type=submit]').val('');
+    $('.re-layer-li .icon-com').hide();
+  }
+
+
+  
+
+  </script>
+</html>
