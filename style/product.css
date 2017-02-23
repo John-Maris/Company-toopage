@@ -202,7 +202,9 @@
 }
 .productContainer .productRight .proFile .file_summary .file_summary_icon
 {
-	width:;
+	display: inline-block;
+	width:14px;
+	height:14px;
 	background:url(../images/icon/common/icon_file_summary.png) no-repeat;
 }
 
