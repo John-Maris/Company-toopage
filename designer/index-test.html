@@ -10,7 +10,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="renderer" content="webkit">
     <meta http-equiv="Cache-Control" content="no-siteapp" />
-    <link rel="stylesheet" href="assets/css/swiper-3.4.1.min.css">
     <link rel="icon" type="image/png" href="assets/i/favicon.png">
     <link rel="apple-touch-icon-precomposed" href="assets/i/app-icon72x72@2x.png">
     <meta name="apple-mobile-web-app-title" content="Amaze UI" />
@@ -28,10 +27,6 @@
             position: relative;
             z-index: 200;
         }
-        .swiper-container {
-                     width: 100%;
-                     height: 100%;
-                 }
 
     </style>
 </head>
@@ -210,7 +205,7 @@
                   <i class="am-icon-circle-o am-text-success tpl-user-panel-status-icon"></i>
                   禁言小张  <small style="color: #6d787c;font-size: 12px;">在线</small>
                 </span>
-                <a href="javascript:;" class="tpl-user-panel-action-link"> <span class="am-icon-chevron-down"></span> 个人资料设置</a>
+                <a href="javascript:;" class="tpl-user-panel-action-link"> <span class="am-icon-pencil"></span> 个人资料设置</a>
             </div>
         </div>
 
@@ -283,38 +278,23 @@
                             <div class="widget-title am-fl">订单的滚动条？</div>
                         </div>
                         <div class="widget-body am-fr">
-
+                            <div class="am-fl">
+                                <div class="widget-fluctuation-period-text">
+                                    ￥61746.45
+                                    <button class="widget-fluctuation-tpl-btn">
+                                        <i class="am-icon-calendar"></i>
+                                        更多月份
+                                    </button>
+                                </div>
+                            </div>
                             <div class="am-fr am-cf">
                                 <div class="widget-fluctuation-description-amount text-success" am-cf>
-                                    <div class="swiper-container demo" id="demo1">
-                                        <div class="swiper-wrapper">
-                                            <div class="swiper-slide">
-                                                <table>
-                                                    <tr>
-                                                        <td colspan="2"><a class="am-badge am-badge-primary am-radius" style="font-weight :500;width:60px">展架</a>清明节水墨中国风海报</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td><button type="button" class="am-btn am-btn-primary">查看详情</button></td>
-                                                        <td><button type="button" class="am-btn am-btn-warning">立即接单</button></td>
-                                                    </tr>
-                                                </table>
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <table>
-                                                    <tr>
-                                                        <td colspan="2"><a class="am-badge am-badge-primary am-radius" style="font-weight :500;width:60px">展架</a>清明节水墨中国风海报</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td><button type="button" class="am-btn am-btn-primary">查看详情</button></td>
-                                                        <td><button type="button" class="am-btn am-btn-warning">立即接单</button></td>
-                                                    </tr>
-                                                </table>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    +￥30420.56
 
                                 </div>
-
+                                <div class="widget-fluctuation-description-text am-text-right">
+                                    8月份收入
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -397,13 +377,18 @@
 
             <div id="swiper-bar" class="row am-cf">
                 <!--滚动-->
-                <div  class="am-u-sm-12 am-u-md-12 am-u-lg-4 widget-margin-bottom-lg ">
+                <div  class="am-u-sm-12 am-u-md-12 am-u-lg-4 widget-margin-bottom-lg " style="">
                     <div class="widget am-cf widget-body-lg" style="margin: 1px">
-
+                        <div class="swiper-container demo" id="demo1">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><img src="assets/img/2.jpg" alt=""></div>
+                                <div class="swiper-slide"><img src="assets/img/1.jpg" alt=""></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
-                <div class="am-u-sm-12 am-u-md-12 am-u-lg-8 widget-margin-bottom-lg">
+                <div class="am-u-sm-12 am-u-md-12 am-u-lg-8 widget-margin-bottom-lg" height="400px">
 
                     <div class="widget am-cf widget-body-lg">
 
@@ -411,91 +396,85 @@
                             <div class="am-scrollable-horizontal ">
                                 <table width="100%" class="am-table am-table-compact am-text-nowrap tpl-table-black " id="example-r">
                                     <thead>
-                                    <tr >
-                                        <th style="font-weight :500">品类</th>
-                                        <th style="font-weight :500">订单名称</th>
-                                        <th style="font-weight :500">客户</th>
-                                        <th style="font-weight :500">交稿期限</th>
-                                        <th style="font-weight :500">操作</th>
+                                    <tr>
+                                        <th>订单名称</th>
+                                        <th>作者</th>
+                                        <th>时间</th>
+                                        <th>操作</th>
                                     </tr>
                                     </thead>
                                     <tbody>
                                     <tr class="gradeX">
-                                        <td><a class="am-badge am-badge-primary am-radius" style="font-weight :500;width:60px">宣传单</a></td>
-                                        <td>XXXXXXXXXXX单页</td>
-                                        <td>张三</td>
+                                        <td>新加坡大数据初创公司 Latize 获 150 万美元风险融资</td>
+                                        <td>张鹏飞</td>
                                         <td>2016-09-26</td>
                                         <td>
                                             <div class="tpl-table-black-operation">
                                                 <a href="javascript:;">
-                                                    <i class="am-icon-chevron-down"></i> 下载
+                                                    <i cl-ass="am-icon-pencil"></i> 编辑
                                                 </a>
                                                 <a href="javascript:;" class="tpl-table-black-operation-del">
-                                                    <i class="am-icon-chevron-up"></i> 上传
+                                                    <i class="am-icon-trash"></i> 删除
                                                 </a>
                                             </div>
                                         </td>
                                     </tr>
                                     <tr class="even gradeC">
-                                        <td><a class="am-badge am-badge-primary am-radius" style="font-weight :500;width:60px">板材</a></td>
-                                        <td>XXXXXXXXXXXX背板</td>
-                                        <td>李四</td>
-                                        <td>2016-09-20</td>
+                                        <td>自拍的“政治角色”：观众背对希拉里自拍合影表示“支持”</td>
+                                        <td>天纵之人</td>
+                                        <td>2016-09-26</td>
                                         <td>
                                             <div class="tpl-table-black-operation">
                                                 <a href="javascript:;">
-                                                    <i class="am-icon-chevron-down"></i> 下载
+                                                    <i class="am-icon-pencil"></i> 编辑
                                                 </a>
                                                 <a href="javascript:;" class="tpl-table-black-operation-del">
-                                                    <i class="am-icon-chevron-up"></i> 上传
+                                                    <i class="am-icon-trash"></i> 删除
                                                 </a>
                                             </div>
                                         </td>
                                     </tr>
                                     <tr class="gradeX">
-                                        <td><a class="am-badge am-badge-primary am-radius" style="font-weight :500;width:60px">名片</a></td>
-                                        <td>名片</td>
-                                        <td>王五</td>
+                                        <td>关于创新管理，我想和你当面聊聊。</td>
+                                        <td>王宽师</td>
                                         <td>2016-09-26</td>
                                         <td>
                                             <div class="tpl-table-black-operation">
                                                 <a href="javascript:;">
-                                                    <i class="am-icon-chevron-down"></i> 下载
+                                                    <i class="am-icon-pencil"></i> 编辑
                                                 </a>
                                                 <a href="javascript:;" class="tpl-table-black-operation-del">
-                                                    <i class="am-icon-chevron-up"></i> 上传
+                                                    <i class="am-icon-trash"></i> 删除
                                                 </a>
                                             </div>
                                         </td>
                                     </tr>
                                     <tr class="even gradeC">
-                                        <td><a class="am-badge am-badge-primary am-radius" style="font-weight :500;width:60px">宣传单</a></td>
-                                        <td>折页</td>
+                                        <td>究竟是趋势带动投资，还是投资引领趋势？</td>
                                         <td>着迷</td>
-                                        <td>2016-09-25</td>
+                                        <td>2016-09-26</td>
                                         <td>
                                             <div class="tpl-table-black-operation">
                                                 <a href="javascript:;">
-                                                    <i class="am-icon-chevron-down"></i> 下载
+                                                    <i class="am-icon-pencil"></i> 编辑
                                                 </a>
                                                 <a href="javascript:;" class="tpl-table-black-operation-del">
-                                                    <i class="am-icon-chevron-up"></i> 上传
+                                                    <i class="am-icon-trash"></i> 删除
                                                 </a>
                                             </div>
                                         </td>
                                     </tr>
                                     <tr class="even gradeC">
-                                        <td><a class="am-badge am-badge-primary am-radius" style="font-weight :500;width:60px">展架</a></td>
-                                        <td>X展架</td>
-                                        <td>赵六</td>
+                                        <td>Docker领域再添一员，网易云发布“蜂巢”，加入云计算之争</td>
+                                        <td>醉里挑灯看键</td>
                                         <td>2016-09-26</td>
                                         <td>
                                             <div class="tpl-table-black-operation">
                                                 <a href="javascript:;">
-                                                    <i class="am-icon-chevron-down"></i> 下载
+                                                    <i class="am-icon-pencil"></i> 编辑
                                                 </a>
                                                 <a href="javascript:;" class="tpl-table-black-operation-del">
-                                                    <i class="am-icon-chevron-up"></i> 上传
+                                                    <i class="am-icon-trash"></i> 删除
                                                 </a>
                                             </div>
                                         </td>
@@ -519,7 +498,6 @@
 <script src="assets/js/amazeui.datatables.min.js"></script>
 <script src="assets/js/dataTables.responsive.min.js"></script>
 <script src="assets/js/app.js"></script>
-<script src="assets/js/amazeui.switch.min.js"></script>
 <script src="assets/swiper/dist/jquery.min.js"></script>
 <script src="assets/swiper/dist/amazeui.swiper.min.js"></script>
 

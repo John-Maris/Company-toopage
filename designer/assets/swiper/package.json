@@ -1,0 +1,48 @@
+{
+  "name": "amazeui-swiper",
+  "version": "0.0.5",
+  "description": "Swiper 轮播插件 Amaze UI 风格",
+  "main": "lib/amazeui.swiper.js",
+  "style": "dist/amazeui.swiper.css",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/amazeui/swiper.git"
+  },
+  "keywords": [
+    "amazeui-plugin",
+    "amaze-ui",
+    "AMUI",
+    "swiper",
+    "jquery-swiper",
+    "jquery-plugin"
+  ],
+  "author": {
+    "name": "minwe",
+    "email": "minwe@yunshipei.com"
+  },
+  "bugs": {
+    "url": "https://github.com/amazeui/swiper/issues"
+  },
+  "homepage": "https://github.com/amazeui/swiper",
+  "license": "MIT",
+  "devDependencies": {
+    "amazeui": "^2.7.0",
+    "amazeui-doc-util": "latest",
+    "amazeui-gulp-tasks": "latest",
+    "browserify": "^13.0.1",
+    "browserify-shim": "^3.8.12",
+    "gulp": "^3.9.1",
+    "gulp-load-plugins": "^1.2.4",
+    "run-sequence": "^1.2.2"
+  },
+  "dependencies": {
+    "jquery": "^2.1.4",
+    "swiper": "^3.3.1"
+  },
+  "browserify-shim": {
+    "jquery": "global:jQuery"
+  }
+}
