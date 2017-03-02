@@ -1,0 +1,283 @@
+body
+{
+	background-color: #fff;
+}
+.logoBar
+{
+	background-color: #f9f9f9;
+	border:none;
+	height: 130px;
+}
+.logoBar .stepBar
+{
+	display: inline-block;
+	margin-top: 50px;
+	overflow: hidden;
+	position: relative;
+}
+.logoBar .stepBar .step-li
+{
+	width: 160px;
+	height: 42px;
+	float: left;
+	position: relative;
+	text-align: center;
+}
+.logoBar .stepBar .step-li .step-name
+{
+	display: block;
+	font-size: 12px;
+	color: #ccc; 
+	font-weight: bold;
+}
+.logoBar .stepBar .step-li .step-line
+{
+	display: inline-block;
+	width: 160px;
+	height: 20px;
+	background: url(../images/icon/common/icon_flow_b.png) 0px 100% no-repeat;
+	margin-top: 6px;
+	margin-left: 75px;
+}
+.logoBar .stepBar .step-last .step-line
+{
+	width: 20px;
+	height: 20px;
+	margin-left: 0px;
+	background: url(../images/icon/common/icon_flow_b.png) 100% no-repeat;
+}
+/*状态属性值*/
+.logoBar .stepBar .finished .step-name,.logoBar .stepBar .now .step-name
+{
+	color:#23598f;
+}
+.logoBar .stepBar .finished .step-line
+{
+	background-image: url(../images/icon/common/icon_flow_com.png);
+}
+.logoBar .stepBar .now .step-line
+{
+	background-image:url(../images/icon/common/icon_flow_now.png);
+}
+/*主内容开始*/
+.mainContainer
+{
+	padding-top: 30px;
+}
+.mainContainer h4
+{
+	font-size: 15px;
+}
+/*商品清单*/
+.shopProduct .productList .product-content
+{
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	padding: 20px 0px 0px 0px;
+}
+.shopProduct .productList .shop-title
+{	
+	width: 100%;
+	height: 29px;
+	background-color: #f6f6f6;
+	border-bottom: 1px solid #e5e5e5;
+	line-height: 29px;
+	font-size: 13px;
+}
+.shopProduct .productList .shop-title div
+{
+	text-align: center;
+}
+.shopProduct .productList .shop-title .t-name
+{
+	width: 240px;
+}
+.shopProduct .productList .shop-title .t-attr
+{
+	width: 240px;
+}
+.shopProduct .productList .shop-title .t-price
+{
+	width: 256px;
+}
+.shopProduct .productList .shop-title .t-quantity
+{
+	width: 218px;
+}
+.shopProduct .productList .shop-title .t-sum
+{
+	width: 246px;
+}
+.shopProduct .productList .shop-title .t-handle
+{
+	width: 120px;
+}
+.shopProduct .productList .product-content .product-info
+{
+	width: 100%;
+	padding: 20px 0px 0px 40px;
+	border-top: 1px solid #eee;
+	border-bottom: 1px solid #eee;
+}
+.shopProduct .productList .product-content .product-info>li
+{
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+}
+.shopProduct .productList .product-content .product-info .p-content
+{
+	height: 60px;
+	overflow: hidden;
+	color: #666;
+}
+.p-content li
+{
+	float: left;
+	height: 60px;
+	line-height: 60px;
+	font-size: 13px;
+}
+.p-content .p-img
+{
+	width: 60px;
+	text-align: left;
+	display: inline-block;
+	margin-left: 20px;
+}
+.p-content .p-info
+{
+	width: 190px;
+	text-align: left;
+	display: inline-block;
+	margin-left: 20px;
+	line-height: 80px;
+}
+.p-content .p-info .p-name
+{
+	display: inline-block;
+	line-height: 15px;
+}
+.p-content .p-info .p-name .p-property
+{
+	width: 100%;
+	line-height: 20px;
+	font-size: 10px;
+}
+.p-content .p-price
+{
+	width: 255px;
+}
+.p-content .p-quantity
+{
+	width: 215px;
+}
+.p-content .p-sum
+{
+	width: 178px;
+}
+/*订单总额*/
+.shopSum
+{
+	height: 100px;
+	background-color: #f6f6f6;
+	position: relative;
+	overflow: hidden;
+}
+.shopSum .statistic
+{
+	width: auto;
+	height: auto;
+	overflow: hidden;
+	padding: 20px 42px 20px 0px;
+
+}
+.shopSum .statistic .list
+{
+	width: 300px;
+	height: 20px;
+    line-height: 20px;
+    margin-bottom: 5px;
+    zoom: 1;
+    font-size: 12px;
+
+}
+.shopSum .statistic .list span
+{
+	width: 180px;
+    margin-right: 20px;
+    float: left;
+    text-align: right;
+}
+.shopSum .statistic .list>em
+{
+	float: right;
+	color: #666;
+	font-style:normal;
+}
+footer
+{
+	background:transparent;
+	color:#999;
+	border-top: 1px solid #23598f;
+}
+
+.pro-check
+{
+	padding-left: 20px;
+	height: 30px;
+	line-height: 30px;
+	margin-top: 5px;
+}
+.pro-check span
+{
+	font-size: 12px;
+}
+.p-sum .shop-delete
+{
+	display: inline-block;
+	width: 60px;
+	height: 18px;
+	border-radius: 5px;
+	line-height: 18px;
+	font-size: 12px;
+	border: none;
+	cursor: pointer;
+}
+.shopSum .select-all 
+{
+	padding: 20px 0px 0px 20px;
+
+}
+.shopSum .delete-some
+{	
+	font-size: 12px;
+	padding: 20px 0px 0px 70px;
+}
+.btn-confirm
+{
+	height: 40px;
+	margin-top: 38px;
+}
+.btn-confirm button
+{
+	
+	width: 146px;
+	height: 38px;
+	border-radius: 10px;
+	border: none;
+	cursor: pointer;
+}
+.btn-confirm .btn-reset
+{
+	margin-left: 20px;
+	border: 1px solid #23598f;
+	background-color: #fff;
+	color: #23598f;
+}
+.btn-confirm .btn-order
+{
+	margin-right: 20px;
+	background-color: #23598f;
+	color: #fff;
+}

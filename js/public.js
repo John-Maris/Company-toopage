@@ -105,10 +105,10 @@
 
 	//通过改写绝对路径使‘更多’指向全部商品页
 	$('.floor_title .more').click(function(){
-		window.location.href='c:/Users/TOTEM-02/Desktop/Company-toopagev-2.0.1/product-list.html';
+		window.location.href='../product-list.html';
 	})
 
 	//通过改写绝对路径使‘全部商品’指向全部商品页
 	$('.shopClass .shopTitle').click(function(){
-		window.location.href='c:/Users/TOTEM-02/Desktop/Company-toopagev-2.0.1/product-list.html';
+		window.location.href='../product-list.html';
 	})

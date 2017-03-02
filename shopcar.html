@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>购物车</title>
+	<link rel="shortcut icon" href="images/icon/favicon.ico">
+	<meta charset="utf-8">
+	<meta name="keywords" content="印刷 平台 创意 服务" />
+	<link rel="stylesheet" type="text/css" href="style/reset.css">
+	<link rel="stylesheet" type="text/css" href="style/main.css">
+	<link rel="stylesheet" type="text/css" href="style/shopcar.css">
+</head>
+<body>
+	<div id="headerBar">
+		<div class="topBar">
+			<div class="comWidth">
+				<div class="leftArea fl">
+					<a href="javascript:void(0)" id="addFav" class="collection">送至：江苏省</a>
+				</div>
+
+				<ul class="rightArea fr">
+						<li class="user_center">
+							<i class="icon_img"><img src="images/icon/icon_usercenter.png"></i>
+							<a href="./user/user-main.html">个人中心</a>
+							<div style="display:none">
+								<a href="#">我的模板</a>
+								<a href="#">个人信息</a>
+								<a href="./user/user-order.html">我的订单</a>
+							</div>
+						</li>
+						<li class="shop_car">
+							<i class="icon_img"><img src="images/icon/icon_shopcar.png"></i>
+							<a href="shopcar.html">购物车</a>
+						</li>
+						<li class="help">
+							<a href="help.html">帮助</a>
+						</li>
+						<li><a href="#">联系我们</a></li>
+				</ul>
+				<!--用户-->
+				<ul class="inLogin fr">
+					<li class="loginOk" style="display: none">
+						<a href="#" class="user_name"></a>
+						<a href="javascript:void(0)">退出</a>
+					</li>
+					<li class="loginResiter">
+						<a href="login.html?id=1">Hi ~ [登录]</a>
+						<a href="login.html?id=2">[注册]</a>
+					</li>
+					<li class="tdesigner">
+						<i class="icon_img"><img src="images/icon/icon_designcenter.png"></i>
+						<a href="#">设计师入口</a>
+					</li>
+				</ul>
+
+			</div>
+		</div>
+		<div class="logoBar">
+			<div class="comWidth">
+				<div class="logo fl">
+					<a href="index.html">
+						<img src="images/logo.png" alt="图腾网" height="60">
+					</a>
+				</div>
+				<div class="stepBar fr">
+					<ul>
+						<li class="step-li now">
+							<div href="#" class="step-name">查看购物车</div>
+							<i class="step-line"></i>
+						</li>
+						<li class="step-li">
+							<div href="#" class="step-name">确认订单</div>
+							<i class="step-line"></i>
+						</li>
+						<li class="step-li">
+							<div href="#" class="step-name">成功提交订单</div>
+							<i class="step-line"></i>
+						</li>
+						<li class="step-li step-last">
+							<div href="#" class="step-name">评价</div>
+							<i class="step-line"></i>
+						</li>
+					</ul>					
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="mainContainer">
+		<div class="shopcarContent comWidth">
+			<h4>购物车详情</h4>
+			<div class="shopProduct">
+			<div class="productList">
+				<div class="product-content">
+					<div class="shop-title">
+						<div class="t-name fl">商品信息</div>
+						<div class="t-price fl">单价</div>
+						<div class="t-quantity fl">数量</div>
+						<div class="t-sum fl">小计</div>
+						<div class="t-handle fl">操作</div>
+					</div>
+					<div class="common comWidth">
+						<div class="pro-check">
+							<input type="checkbox" name="common">
+							<span>普通商品</span>
+						</div>
+						<ul class="product-info">
+						<li>
+							<div class="p-content">
+								<ul class="p-item">
+									<li class="p-checkbox">
+										<input type="checkbox" name="shop-check">
+									</li>
+										<li class="p-img">
+											<a href="#">
+												<img alt="产品小图" src="./images/pages/order/001-s.jpg">
+											</a>
+										</li>
+										<li class="p-info">
+											<div class="p-name">
+												<a href="product.html">铜版纸名片覆亚膜</a>
+												<div class="p-property">
+													<span>单面烫金;</span>
+													<span>覆亚膜;</span>
+													<span>单面烫金;</span>
+												</div>
+											</div>
+										</li>
+										<li class="p-price price-color">¥18.00</li>
+										<li class="p-quantity">x2</li>
+										<li class="p-sum price-color">¥36.00</li>
+										<li class="p-sum">
+											<button class="shop-delete">删除</button>
+										</li>
+									</ul>
+							</div>
+						</li>
+						<li>
+							<div class="p-content">
+								<ul class="p-item">
+									<li class="p-checkbox">
+										<input type="checkbox" name="shop-check">
+									</li>
+										<li class="p-img">
+											<a href="#">
+												<img alt="产品小图" src="./images/pages/order/001-s.jpg">
+											</a>
+										</li>
+										<li class="p-info">
+											<div class="p-name">
+												<a href="product.html">铜版纸名片覆亚膜</a>
+												<div class="p-property">
+													<span>单面烫金;</span>
+													<span>覆亚膜;</span>
+													<span>单面烫金;</span>
+												</div>
+											</div>
+										</li>
+										<li class="p-price price-color">¥18.00</li>
+										<li class="p-quantity">x2</li>
+										<li class="p-sum price-color">¥36.00</li>
+										<li class="p-sum">
+											<button class="shop-delete">删除</button>
+										</li>
+									</ul>
+							</div>
+						</li>
+						<li>
+							<div class="p-content">
+								<ul class="p-item">
+									<li class="p-checkbox">
+										<input type="checkbox" name="shop-check">
+									</li>
+										<li class="p-img">
+											<a href="#">
+												<img alt="产品小图" src="./images/pages/order/001-s.jpg">
+											</a>
+										</li>
+										<li class="p-info">
+											<div class="p-name">
+												<a href="product.html">铜版纸名片覆亚膜</a>
+												<div class="p-property">
+													<span>单面烫金;</span>
+													<span>覆亚膜;</span>
+													<span>单面烫金;</span>
+												</div>
+											</div>
+										</li>
+										<li class="p-price price-color">¥18.00</li>
+										<li class="p-quantity">x2</li>
+										<li class="p-sum price-color">¥36.00</li>
+										<li class="p-sum">
+											<button class="shop-delete">删除</button>
+										</li>
+									</ul>
+							</div>
+						</li>
+						
+					</ul>
+					</div>
+										<div class="common comWidth">
+						<div class="pro-check">
+							<input type="checkbox" name="common">
+							<span>特殊商品</span>
+						</div>
+						<ul class="product-info">
+						<li>
+							<div class="p-content">
+								<ul class="p-item">
+									<li class="p-checkbox">
+										<input type="checkbox" name="shop-check">
+									</li>
+										<li class="p-img">
+											<a href="#">
+												<img alt="产品小图" src="./images/pages/order/001-s.jpg">
+											</a>
+										</li>
+										<li class="p-info">
+											<div class="p-name">
+												<a href="product.html">铜版纸名片覆亚膜</a>
+												<div class="p-property">
+													<span>单面烫金;</span>
+													<span>覆亚膜;</span>
+													<span>单面烫金;</span>
+												</div>
+											</div>
+										</li>
+										<li class="p-price price-color">¥18.00</li>
+										<li class="p-quantity">x2</li>
+										<li class="p-sum price-color">¥36.00</li>
+										<li class="p-sum">
+											<button class="shop-delete">删除</button>
+										</li>
+									</ul>
+							</div>
+						</li>
+						<li>
+							<div class="p-content">
+								<ul class="p-item">
+									<li class="p-checkbox">
+										<input type="checkbox" name="shop-check">
+									</li>
+										<li class="p-img">
+											<a href="#">
+												<img alt="产品小图" src="./images/pages/order/001-s.jpg">
+											</a>
+										</li>
+										<li class="p-info">
+											<div class="p-name">
+												<a href="product.html">铜版纸名片覆亚膜</a>
+												<div class="p-property">
+													<span>单面烫金;</span>
+													<span>覆亚膜;</span>
+													<span>单面烫金;</span>
+												</div>
+											</div>
+										</li>
+										<li class="p-price price-color">¥18.00</li>
+										<li class="p-quantity">x2</li>
+										<li class="p-sum price-color">¥36.00</li>
+										<li class="p-sum">
+											<button class="shop-delete">删除</button>
+										</li>
+									</ul>
+							</div>
+						</li>
+						<li>
+							<div class="p-content">
+								<ul class="p-item">
+									<li class="p-checkbox">
+										<input type="checkbox" name="shop-check">
+									</li>
+										<li class="p-img">
+											<a href="#">
+												<img alt="产品小图" src="./images/pages/order/001-s.jpg">
+											</a>
+										</li>
+										<li class="p-info">
+											<div class="p-name">
+												<a href="product.html">铜版纸名片覆亚膜</a>
+												<div class="p-property">
+													<span>单面烫金;</span>
+													<span>覆亚膜;</span>
+													<span>单面烫金;</span>
+												</div>
+											</div>
+										</li>
+										<li class="p-price price-color">¥18.00</li>
+										<li class="p-quantity">x2</li>
+										<li class="p-sum price-color">¥36.00</li>
+										<li class="p-sum">
+											<button class="shop-delete">删除</button>
+										</li>
+									</ul>
+							</div>
+						</li>
+						
+					</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
+		<div class="shopSum comWidth" style="border-bottom: none;">
+            <!--  预售 计算支付展现方式 begin -->
+            	<div class="check-handle">
+	            	<div class="select-all fl">
+	            		<input type="checkbox" name="select-all" id="select-all">
+						<span style="font-size: 12px;display: inline-block;position: relative;top: -2px;">全选</span>
+	            	</div>
+	            </div>
+            	<div class="delete-some fl">批量删除</div>
+            	<div class="statistic fr">
+                    <div class="list">
+                        <span><em class="ftx-01">0</em>件商品，总商品金额：</span>
+                        <em class="price sum-price">￥00.00</em>
+                    </div>
+                    <div class="list">
+                        <span>折扣：</span>
+                        <em class="price"> -￥0.00</em>
+                    </div>
+                    <div class="list">
+                        <span>运费：</span>
+                        <em class="price"><font color="#FF6600"> ￥6.00</font></em>
+                    </div>
+                    <div class="list" id="showCouponPrice" style="display:none;">
+                        <input id="couponPriceNum" type="hidden" value="0">
+                        <input id="couponPricehidden" type="hidden" value="0">
+                        <span>积分抵扣：</span><em class="price" id="couponPriceId" style="display: none;">-￥0.00</em>
+                    </div>
+                    <div class="list" id="showFreeFreight" style="display:none;">
+                        <input id="freeFreightPriceNum" type="hidden" value="0">
+                        <input id="freeFreightPricehidden" type="hidden" value="0">
+                        <span>优惠券优惠：</span><em class="price" id="freeFreightPriceId">-￥0.00</em>
+                    </div>
+                    <div class="list" id="showUsedOrderBalance" style="display:none;">
+                        <input type="hidden" id="useBalanceShowDiscount" value="0.00">
+                        <span>余额：</span><em class="price" id="usedBalanceId">-￥0.00</em>
+                    </div>
+                </div>
+        </div>
+        <div class="btn-confirm comWidth">
+        	<button class="btn-reset fl" onclick="window.location.href='index.html'">再逛逛</button>
+        	<button class="btn-order fr" onclick="window.location.href='order.html'">去结算</button>
+        </div>
+	</div>
+	<footer>
+		<div class="comWidth">
+			<p>
+				<a target="_blank" href="#">关于我们</a>|
+				<a target="_blank" href="#">联系我们</a>|
+				<a target="_blank" href="#">媒体报道</a>|
+				<a target="_blank" href="#">商业合作</a>|
+				<a target="_blank" href="#">版权声明</a>
+			</p>
+			<p>CopyRight?2005-2016 图腾 苏ICP备05005325号-2 经营许可证编号:苏ICP备05005325号 企业营业执照：320205000241790</p>
+		</div>
+	</footer>
+</body>
+<script type="text/javascript" src="lib/jquery-3.1.0.min.js"></script>
+<script type="text/javascript" src="lib/layer/layer.js"></script>
+<script type="text/javascript" src='js/public.js'></script>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		select_all();
+		clac_num_sum();
+		delete_product();
+		clac_price_sum();
+		 $(':checkbox').click(function(){
+		 	clac_num_sum();
+		 })
+	})
+
+	function select_all(){
+		document.getElementById('select-all').onclick=function(){
+				var shop_check = $("[name=shop-check]:checkbox");
+				shop_check.prop("checked",this.checked);
+		}
+	}
+	function clac_num_sum(){
+			var num = 0;
+		$("[name=shop-check]:checkbox").each(function(){
+			if(this.checked)
+			{
+				num++;
+			}
+			$('.statistic .list .ftx-01').text(num)
+			
+		})
+		clac_price_sum();
+	}
+	function delete_product(){
+		$('.shop-delete').click(function(){
+			var shop = $(this)
+			layer.confirm('确定要删除?', {
+			  title:'提示',
+			  btn: ['确定','取消'] //按钮
+			}, function(index){
+			  shop.parents('li').remove();
+			  layer.close(index);
+			});
+			
+
+		})
+	}
+	function clac_price_sum()
+	{
+		var sum = $('.sum-price');
+		var price = 0;
+		$("[name=shop-check]:checkbox").each(function(){
+			var single_price  = $(this).parents('.p-content').find('.p-sum').text().slice(1);
+			if(this.checked)
+			{
+				single_price = parseFloat(single_price);
+				price = price + single_price;
+				$('.sum-price').text('￥'+price)
+			}
+			
+		})
+	}
+</script>
+</html>

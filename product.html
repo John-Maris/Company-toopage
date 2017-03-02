@@ -313,14 +313,22 @@
 						</li>
 					</ul>
 			</div>
-			<div class="proList proFile" style="display:none">
+			<div class="proList proFile" style="display:none; overflow:visible;">
 				<span class="list_name fl">上传文件：</span>
-				<a class="file_upload fl" href="javascript:void(0)">
-				上传
+				<a href="javascript:void(0)" class="file_upload fl">
+					<input type="file" name="file">上传
 				</a>
-				<div class="file_summary">
-					<a href="#" class="file_summary_icon"></a>
-					<div class="file_summary_content"></div>
+				<a href="#)" class="file_add fl">
+					<span>上传并修改</span>
+				</a>
+				<div class="file_summary fl">
+					<i class="file_summary_icon"></i>
+					<div class="file_summary_content dis-none" id='text_summary'>
+						<p>1、普通上传格式为psd、ai、jpg等。</p>
+						<p>2、文件尺寸为96x56mm，300dpi。</p>
+						<p>3、若为正反两个文件，请压缩完上传。</p>
+						<p>4、需要修改的文件必须源文件上传。</p>
+					</div>
 				</div>
 			</div>
 			<div class="proButton">

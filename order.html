@@ -5,12 +5,12 @@
 	<link rel="shortcut icon" href="images/icon/favicon.ico">
 	<meta charset="utf-8">
 	<meta name="keywords" content="印刷 平台 创意 服务" />
-	<link rel="stylesheet" type="text/css" href="style/reset.css">
 	<link rel="stylesheet" type="text/css" href="style/main.css">
 	<link rel="stylesheet" type="text/css" href="style/order.css">
+	<link rel="stylesheet" type="text/css" href="style/reset.css">
 </head>
 <body>
-	<div class="headerBar">
+	<div id="headerBar">
 		<div class="topBar">
 			<div class="comWidth">
 				<div class="leftArea fl">
@@ -20,24 +20,26 @@
 				<ul class="rightArea fr">
 						<li class="user_center">
 							<i class="icon_img"><img src="images/icon/icon_usercenter.png"></i>
-							<a href="user/user-main.html">个人中心</a>
+							<a href="./user/user-main.html">个人中心</a>
 							<div style="display:none">
 								<a href="#">我的模板</a>
 								<a href="#">个人信息</a>
-								<a href="#">我的订单</a>
+								<a href="./user/user-order.html">我的订单</a>
 							</div>
 						</li>
 						<li class="shop_car">
 							<i class="icon_img"><img src="images/icon/icon_shopcar.png"></i>
-							<a href="">购物车</a>
+							<a href="shopcar.html">购物车</a>
 						</li>
-						<li class="help"><a href="">帮助</a></li>
+						<li class="help">
+							<a href="help.html">帮助</a>
+						</li>
 						<li><a href="#">联系我们</a></li>
 				</ul>
 				<!--用户-->
 				<ul class="inLogin fr">
 					<li class="loginOk" style="display: none">
-						<a href=""></a>
+						<a href="#" class="user_name"></a>
 						<a href="javascript:void(0)">退出</a>
 					</li>
 					<li class="loginResiter">
@@ -62,20 +64,20 @@
 				<div class="stepBar fr">
 					<ul>
 						<li class="step-li finished">
-							<a href="#">查看购物车</a>
-							<i class="step-ball"></i>
+							<div href="#" class="step-name">查看购物车</div>
+							<i class="step-line"></i>
 						</li>
-						<li class="step-li finished">
-							<a href="#">确认订单</a>
-							<i class="step-ball"></i>
-						</li>
-						<li class="step-li">
-							<a href="#">成功提交订单</a>
-							<i class="step-ball"></i>
+						<li class="step-li now">
+							<div href="#" class="step-name">确认订单</div>
+							<i class="step-line"></i>
 						</li>
 						<li class="step-li">
-							<a href="#">评价</a>
-							<i class="step-ball"></i>
+							<div href="#" class="step-name">成功提交订单</div>
+							<i class="step-line"></i>
+						</li>
+						<li class="step-li step-last">
+							<div href="#" class="step-name">评价</div>
+							<i class="step-line"></i>
 						</li>
 					</ul>					
 				</div>
@@ -89,22 +91,52 @@
 			<a href="javascript:void(0)" class="add">新增收货地址</a>
 			<div class="adress-section">
 				<h4>收件人信息</h4>
-				<ul>
-					<li class="take active">
+				<div class="content">
+					<ul>
+					<li class="take active on">
 						<div class="take-name fl">杭梦栩</div>
-						<div class="take-address fl">江苏省苏州市工业园区 娄葑镇中信大厦128号 加城大厦F5-D7</div>
-						<div class="take-phone fl">185*****2519</div>
+						<div class="take-content fl">
+							<div class="fl">江苏省苏州市工业园区 娄葑镇中信大厦128号 加城大厦F5-D7</div>
+							<div class="fl">185*****2519</div>
+							<div class="handle fl">
+								<span class="tab_on">设为默认地址</span>
+								<span class="edit">编辑</span>
+								<span class="delete">删除</span>
+							</div>
+						</div>
 					</li>
-					<li class="take ">
+					<li class="take">
 						<div class="take-name fl">杭梦栩</div>
-						<div class="take-address fl">江苏省苏州市工业园区 娄葑镇中信大厦128号 加城大厦F5-D7</div>
-						<div class="take-phone fl">185*****2519</div>
+						<div class=" take-content fl">
+							<div class="fl">江苏省苏州市工业园区 娄葑镇中信大厦128号 加城大厦F5-D7</div>
+							<div class="fl">185*****2519</div>
+							<div class="handle fl">
+								<span class="tab_on">设为默认地址</span>
+								<span class="edit">编辑</span>
+								<span class="delete">删除</span>
+							</div>
+						</div>
+					</li>
+					<li class="take">
+						<div class="take-name fl">杭梦栩</div>
+						<div class="take-content fl">
+							<div class="fl">江苏省苏州市工业园区 娄葑镇中信大厦128号 加城大厦F5-D7</div>
+							<div class="fl">185*****2519</div>
+							<div class="handle fl">
+								<span class="tab_on">设为默认地址</span>
+								<span class="edit">编辑</span>
+								<span class="delete">删除</span>
+							</div>
+						</div>
 					</li>
 				</ul>
+				</div>
+				
 			</div>
 		</div>
 		<div class="orderPayment comWidth order">
 			<h4>支付方式</h4>
+			<div class="payment-content">
 			<ul>
 				<li class="payment active">
 					<a href="javascript:void(0)">
@@ -126,16 +158,156 @@
 						余额支付
 					</a>
 				</li>
-			</ul>
+			</ul></div>
+			
 		</div>
 		<div class="orderProduct comWidth order">
 			<h4>送货清单</h4>
+			<div class="productList">
+				<div class="product-content">
+					<div class="order-title">
+						<div class="t-name fl">商品名称</div>
+						<div class="t-attr fl">商品属性</div>
+						<div class="t-price fl">单价</div>
+						<div class="t-quantity fl">数量</div>
+						<div class="t-sum fl">小计</div>
+					</div>
+					<ul class="product-info">
+						<li>
+							<div class="p-content">
+									<ul class="p-item">
+										<li class="p-img">
+											<a href="#">
+												<img alt="产品小图" src="./images/pages/order/001-s.jpg">
+											</a>
+										</li>
+										<li class="p-info">
+											<a href="#" class="p-name">铜版纸名片覆亚膜</a>
+										</li>
+										<li class="p-attr">圆角；单面烫金</li>
+										<li class="p-price price-color">¥18.00元</li>
+										<li class="p-quantity">x2</li>
+										<li class="p-sum price-color">¥36.00元</li>
+									</ul>
+							</div>
+						</li>
+						<li>
+							<div class="p-content">
+									<ul class="p-item">
+										<li class="p-img">
+											<a href="#">
+												<img alt="产品小图" src="./images/pages/order/001-s.jpg">
+											</a>
+										</li>
+										<li class="p-info">
+											<a href="#" class="p-name">铜版纸名片覆亚膜</a>
+										</li>
+										<li class="p-attr">圆角；单面烫金</li>
+										<li class="p-price price-color">¥18.00元</li>
+										<li class="p-quantity">x2</li>
+										<li class="p-sum price-color">¥36.00元</li>
+									</ul>
+							</div>
+						</li>
+						<li>
+							<div class="p-content">
+									<ul class="p-item">
+										<li class="p-img">
+											<a href="#">
+												<img alt="产品小图" src="./images/pages/order/001-s.jpg">
+											</a>
+										</li>
+										<li class="p-info">
+											<a href="#" class="p-name">铜版纸名片覆亚膜</a>
+										</li>
+										<li class="p-attr">圆角；单面烫金</li>
+										<li class="p-price price-color">¥18.00元</li>
+										<li class="p-quantity">x2</li>
+										<li class="p-sum price-color">¥36.00元</li>
+									</ul>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
 		</div>
 		<div class="orderInvoice comWidth order">
 			<h4>发票信息</h4>
+			<div class="invoice-content">
+				<span>普通发票(电子)</span>
+				<span>个人</span>
+				<span>明细</span>
+				<a href="#none" class="invoice-edit">修改</a>
+			</div>
 		</div>
 		<div class="orderCoupon comWidth order">
 			<h4>使用优惠</h4>
+			<div class="coupon-content">
+				<div class="coupon-title">
+					<span class="ticket">优惠券</span>
+					<span class="point on">积分抵扣</span>
+				</div>
+				<div class="coupon-info">
+					<div class="point-info coupon-colume">
+						<div class="point-quantity">
+							<input type="checkbox" name="ticket" value="使用" checked="checked">
+							<span>使用积分（当前账户积分：<a href="#none" class="point-num">100</a>分）</span>
+						</div>
+					</div>
+					<div class="ticket-info coupon-colume" style="display: none;">
+						<div class="ticket-quantity">
+							<span>满100减10</span>
+							<span>满50减2元</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="orderSum comWidth order" style="border-bottom: none;">
+            <!--  预售 计算支付展现方式 begin -->
+                <div class="statistic fr">
+                    <div class="list">
+                        <span><em class="ftx-01">1</em> 件商品，总商品金额：</span>
+                        <em class="price">￥90.00</em>
+                    </div>
+                    <div class="list">
+                        <span>折扣：</span>
+                        <em class="price"> -￥0.00</em>
+                    </div>
+                    <div class="list">
+                        <span>运费：</span>
+                        <em class="price"><font color="#FF6600"> ￥6.00</font></em>
+                    </div>
+                    <div class="list" id="showCouponPrice" style="display:none;">
+                        <input id="couponPriceNum" type="hidden" value="0">
+                        <input id="couponPricehidden" type="hidden" value="0">
+                        <span>积分抵扣：</span><em class="price" id="couponPriceId" style="display: none;">-￥0.00</em>
+                    </div>
+                    <div class="list" id="showFreeFreight" style="display:none;">
+                        <input id="freeFreightPriceNum" type="hidden" value="0">
+                        <input id="freeFreightPricehidden" type="hidden" value="0">
+                        <span>优惠券优惠：</span><em class="price" id="freeFreightPriceId">-￥0.00</em>
+                    </div>
+                    <div class="list" id="showUsedOrderBalance" style="display:none;">
+                        <input type="hidden" id="useBalanceShowDiscount" value="0.00">
+                        <span>余额：</span><em class="price" id="usedBalanceId">-￥0.00</em>
+                    </div>
+                </div>
+        </div>
+        <div class="orderTrade comWidth order" style=" border-bottom:none;margin-top: 0;">
+			<div class="trade-foot">
+				<div class="price-info">
+	                  <span class="price-title">应付总额：</span>
+	                  <span class="price-num">￥75.90</span>
+	            </div>
+				<div class="guest-info">
+	                 <span class="guest-ad">寄送至: 江苏 苏州市 工业园区 娄葑镇 中新大道128号 加成大厦F5-D7</span>
+	                 <span class="guest-name">收货人: 杭梦栩 185****2519</span>
+	            </div>
+      		</div>
+	      	<div class="orderSummit fr">
+	 			<button type="submit" class="checkout-submit">确认订单</button>
+	        </div>
 		</div>
 	</div>
 	<footer>
@@ -153,19 +325,5 @@
 </body>
 <script type="text/javascript" src="lib/jquery-3.1.0.min.js"></script>
 <script type="text/javascript" src='js/public.js'></script>
-<script>
-	$(document).ready(function(){
-		tab_adress();
-	})
-	function tab_adress(){
-		$('.take').click(function(){
-			$(this).siblings().removeClass('active');
-			$(this).addClass('active');
-		})
-		$('.payment').click(function(){
-			$(this).siblings().removeClass('active');
-			$(this).addClass('active');
-		})
-	}
-</script>
+<script type="text/javascript" src='js/order.js'></script>
 </html>
