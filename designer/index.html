@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -100,7 +100,7 @@
                                 </a>
                             </li>
                             <li class="tpl-dropdown-menu-messages">
-                                <a href="javascript:;" class="tpl-dropdown-menu-messages-item am-cf">
+                                <a href="letter.html" class="tpl-dropdown-menu-messages-item am-cf">
                                     <i class="am-icon-circle-o"></i> 进入列表…
                                 </a>
                             </li>
@@ -215,14 +215,14 @@
                 </a>
                 <ul class="sidebar-nav sidebar-nav-sub">
                     <li class="sidebar-nav-link">
-                        <a href="table-list.html">
+                        <a href="order-undone.html">
                             <span class="am-icon-angle-right sidebar-nav-link-logo"></span> 待处理订单
                             <span class="am-badge am-badge-secondary sidebar-nav-link-logo-ico am-round am-fr am-margin-right-sm">6</span>
                         </a>
                     </li>
 
                     <li class="sidebar-nav-link">
-                        <a href="table-list-img.html">
+                        <a href="order-done.html">
                             <span class="am-icon-angle-right sidebar-nav-link-logo"></span> 已完成订单
                         </a>
                     </li>
@@ -234,7 +234,7 @@
                 </a>
             </li>
             <li class="sidebar-nav-link">
-                <a href="calendar.html">
+                <a href="account.html">
                     <i class="am-icon-user sidebar-nav-link-logo"></i> 账户管理
                 </a>
             </li>
@@ -245,21 +245,18 @@
 
         <div class="container-fluid am-cf">
             <div class="row">
-                <div class="am-u-sm-12 am-u-md-9 am-u-lg-9">
+                <div class="am-u-sm-7 am-u-md-9 am-u-lg-10">
                     <div class="page-header-heading" ><span class="am-icon-home page-header-heading-icon" ></span> 首页</div>
                     <div class="page-header-description"><span>三</span>级设计师<span class="am-fr am-progress-title-more">28% / 100%</span></div>
                     <div class="am-progress">
                         <div class="am-progress-bar" style="width: 15%"></div>
                     </div>
                 </div>
-                <div class="am-u-lg-3 am-u-sm-12 am-u-md-3" style="position: relative;top: 10px;padding:20px ">
+                <div class="am-u-sm-5 am-u-md-3 am-u-lg-2 am-fr" style="position: relative;padding:20px;padding-top: 0px ">
                     <!--备注：这里要写一个js-->
-
-                    <div class="am-u-sm-4 am-u-md-6 am-u-lg-5 " style="position: relative;top: 3px;">
-                        <div class="page-header-description" style="font-size: 16px;">我在线上</div>
-                    </div>
-                    <div class="am-u-sm-8 am-u-md-6 am-u-lg-7">
-                        <div class="tpl-switch">
+                    <div class="online" style="width: 80%;padding: 10px;padding-top: 5px;border-radius: 5px;">
+                        <div class="page-header-description" style="font-size: 16px;text-align:center">我在线上</div>
+                        <div class="tpl-switch" style="position:relative;left:50%;margin-left:-25px;">
                             <input type="checkbox" class="ios-switch bigswitch tpl-switch-btn" checked="">
                             <div class="tpl-switch-btn-view">
                                 <div>
@@ -274,12 +271,13 @@
         <div class="row-content am-cf">
             <div class="row  am-cf">
                 <!--订单的滚动条？-->
-                <div class="am-u-sm-12 am-u-md-12 am-u-lg-4">
-                    <div class="widget am-cf">
-                        <div class="widget-head am-cf">
-                            <div class="widget-title am-fl">订单</div>
+
+                <div class="am-u-sm-12 am-u-md-6 am-u-lg-4">
+                    <div class="widget widget-dingdan  am-cf">
+                        <div class="widget-statistic-header1" style="margin-left: -5px">
+                            订单
                         </div>
-                        <div class="widget-body am-fr">
+                        <div class="widget-statistic-body">
                             <div class="am-slider am-slider-default" >
                                 <ul class="am-slides">
                                     <li>设计师：<span>阿银*** </span>完成了订单 <span>大气红黑名片 </span>获得佣金 <span>30</span>元</li>
@@ -288,7 +286,6 @@
                             </div>
                         </div>
                     </div>
-
                 </div>
                 <!--本月收入-->
                 <div class="am-u-sm-12 am-u-md-6 am-u-lg-4">
@@ -456,7 +453,6 @@
 <script src="assets/swiper/dist/jquery.min.js"></script>
 <script src="assets/swiper/dist/amazeui.swiper.min.js"></script>
 <script>
-    $('.am-slider').flexslider();
         $(function() {
             $('.am-slider').flexslider({
                 directionNav: false,
