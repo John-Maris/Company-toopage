@@ -962,6 +962,13 @@ ul.tpl-dropdown-content .tpl-dropdown-menu-messages-item .menu-messages-content 
 .theme-white .tpl-form-line-form .am-form-group {
   /*padding: 20px 0;*/
 }
+.theme-white .am-slides{
+  background-color: #fff;
+}
+
+.theme-black .am-slides{
+  background-color: rgb(66,75,79);
+}
 .theme-white .tpl-form-line-form .am-form-label .tpl-form-line-small-title {
   color: #999;
   font-size: 12px;
@@ -1077,9 +1084,9 @@ ul.tpl-dropdown-content .tpl-dropdown-menu-messages-item .menu-messages-content 
 }
 .theme-white .widget-primary {
   min-height: 174px;
-  border: 1px solid #32c5d2;
-  border-top: 2px solid #32c5d2;
-  background: #32c5d2;
+  border: 1px solid #5690C7 ;
+  border-top: 2px solid #5690C7 ;
+  background: #5690C7 ;
   color: #ffffff;
   padding: 12px 17px;
   padding-left: 22px;
@@ -1131,6 +1138,9 @@ ul.tpl-dropdown-content .tpl-dropdown-menu-messages-item .menu-messages-content 
 }
 .theme-white .widget-purple .widget-statistic-description {
   color: #ded5e7;
+}
+.theme-white .online{
+  background-color: #c2cad8;
 }
 .theme-white .page-header-button {
   opacity: .8;
@@ -1729,7 +1739,7 @@ ul.tpl-dropdown-content .tpl-dropdown-menu-messages-item .menu-messages-content 
 .theme-black .widget-primary {
   border: 1px solid #11627d;
   border-top: 2px solid #105f79;
-  background: #1786aa;
+  background: #5690C7;
   color: #ffffff;
   padding: 12px 17px;
 }

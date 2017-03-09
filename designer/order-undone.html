@@ -10,7 +10,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="renderer" content="webkit">
     <meta http-equiv="Cache-Control" content="no-siteapp" />
-    <link rel="stylesheet" href="assets/css/swiper-3.4.1.min.css">
     <link rel="icon" type="image/png" href="assets/i/favicon.png">
     <link rel="apple-touch-icon-precomposed" href="assets/i/app-icon72x72@2x.png">
     <meta name="apple-mobile-web-app-title" content="Amaze UI" />
@@ -19,7 +18,7 @@
     <link rel="stylesheet" href="assets/css/amazeui.datatables.min.css" />
     <link rel="stylesheet" href="assets/css/app.css">
     <script src="assets/js/jquery.min.js"></script>
-    <link rel="stylesheet" href="assets/swiper/dist/amazeui.swiper.min.css"/>
+
 </head>
 
 <body data-type="widgets">
@@ -193,10 +192,10 @@
                     <img src="assets/img/user04.png" alt="">
                 </div>
                 <span class="user-panel-logged-in-text">
-              <i class="am-icon-circle-o am-text-success tpl-user-panel-status-icon"></i>
-              禁言小张
-          </span>
-                <a href="javascript:;" class="tpl-user-panel-action-link"> <span class="am-icon-pencil"></span> 个人资料设置</a>
+                  <i class="am-icon-circle-o am-text-success tpl-user-panel-status-icon"></i>
+                  禁言小张  <small style="color: #6d787c;font-size: 12px;">在线</small>
+                </span>
+                <a href="javascript:;" class="tpl-user-panel-action-link"> <span class="am-icon-chevron-down"></span> 个人资料设置</a>
             </div>
         </div>
 
@@ -215,14 +214,14 @@
                 </a>
                 <ul class="sidebar-nav sidebar-nav-sub">
                     <li class="sidebar-nav-link">
-                        <a href="table-list.html">
+                        <a href="order-undone.html">
                             <span class="am-icon-angle-right sidebar-nav-link-logo"></span> 待处理订单
                             <span class="am-badge am-badge-secondary sidebar-nav-link-logo-ico am-round am-fr am-margin-right-sm">6</span>
                         </a>
                     </li>
 
                     <li class="sidebar-nav-link">
-                        <a href="table-list-img.html">
+                        <a href="order-done.html">
                             <span class="am-icon-angle-right sidebar-nav-link-logo"></span> 已完成订单
                         </a>
                     </li>
@@ -234,115 +233,56 @@
                 </a>
             </li>
             <li class="sidebar-nav-link">
-                <a href="calendar.html">
+                <a href="account.html">
                     <i class="am-icon-user sidebar-nav-link-logo"></i> 账户管理
                 </a>
             </li>
         </ul>
     </div>
+
+
     <!-- 内容区域 -->
     <div class="tpl-content-wrapper">
-
-        <div class="container-fluid am-cf">
-            <div class="row">
-                <div class="am-u-sm-12 am-u-md-9 am-u-lg-9">
-                    <div class="page-header-heading" ><span class="am-icon-home page-header-heading-icon" ></span> 首页</div>
-                    <div class="page-header-description"><span>三</span>级设计师<span class="am-fr am-progress-title-more">28% / 100%</span></div>
-                    <div class="am-progress">
-                        <div class="am-progress-bar" style="width: 15%"></div>
-                    </div>
-                </div>
-                <div class="am-u-lg-3 am-u-sm-12 am-u-md-3" style="position: relative;top: 10px;padding:20px ">
-                    <!--备注：这里要写一个js-->
-
-                    <div class="am-u-sm-4 am-u-md-6 am-u-lg-5 " style="position: relative;top: 3px;">
-                        <div class="page-header-description" style="font-size: 16px;">我在线上</div>
-                    </div>
-                    <div class="am-u-sm-8 am-u-md-6 am-u-lg-7">
-                        <div class="tpl-switch">
-                            <input type="checkbox" class="ios-switch bigswitch tpl-switch-btn" checked="">
-                            <div class="tpl-switch-btn-view">
-                                <div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
         <div class="row-content am-cf">
-            <div class="row  am-cf">
-                <!--订单的滚动条？-->
-                <div class="am-u-sm-12 am-u-md-12 am-u-lg-4">
+            <div class="row">
+                <div class="am-u-sm-12 am-u-md-12 am-u-lg-12">
                     <div class="widget am-cf">
                         <div class="widget-head am-cf">
-                            <div class="widget-title am-fl">订单</div>
-                        </div>
-                        <div class="widget-body am-fr">
-                            <div class="am-slider am-slider-default" >
-                                <ul class="am-slides">
-                                    <li>设计师：<span>阿银*** </span>完成了订单 <span>大气红黑名片 </span>获得佣金 <span>30</span>元</li>
-                                    <li>设计师：<span>Wrin*** </span>完成了订单 <span>简约矢量名片 </span>获得佣金 <span>30</span>元</li>
-                                </ul>
+                            <div class="am-u-sm-12 am-u-md-12 am-u-lg-6">
+                                <div class="widget-title  am-cf am-margin-bottom-sm">未完成订单</div>
                             </div>
-                        </div>
-                    </div>
-
-                </div>
-                <!--本月收入-->
-                <div class="am-u-sm-12 am-u-md-6 am-u-lg-4">
-                    <div class="widget widget-primary am-cf">
-                        <div class="widget-statistic-header" style="margin-left: -5px">
-                            本月收入
-                        </div>
-                        <div class="widget-statistic-body">
-                            <div class="widget-statistic-value">
-                                ￥27,294
+                            <div class="am-u-sm-12 am-u-md-6 am-u-lg-3">
+                                <div class="am-form-group tpl-table-list-select">
+                                    <select data-am-selected="{btnSize: 'sm'}">
+                                        <option value="option1">所有类别</option>
+                                        <option value="option2">名片</option>
+                                        <option value="option3">展架</option>
+                                        <option value="option4">写真</option>
+                                        <option value="option5">喷绘</option>
+                                        <option value="option6">宣传单</option>
+                                        <option value="option7">胶贴纸</option>
+                                        <option value="option8">……</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="am-u-sm-12 am-u-md-6 am-u-lg-3">
+                                <div class="am-input-group am-input-group-sm tpl-form-border-form cl-p">
+                                    <input type="text" class="am-form-field ">
+                                    <span class="am-input-group-btn">
+                                         <button class="am-btn  am-btn-default am-btn-success tpl-table-list-field am-icon-search" type="button"></button>
+                                    </span>
+                                </div>
                             </div>
 
-                            <span class="widget-statistic-icon am-icon-credit-card-alt"></span>
                         </div>
-                    </div>
-                </div>
-                <!--累计积分-->
-                <div class="am-u-sm-12 am-u-md-6 am-u-lg-4">
-                    <div class="widget widget-purple am-cf">
-                        <div class="widget-statistic-header">
-                            累计积分
-                        </div>
-                        <div class="widget-statistic-body">
-                            <div class="widget-statistic-value" style="margin-left: 15px">
-                                285
-                            </div>
-                            <span class="widget-statistic-icon am-icon-support"></span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row am-cf">
-                <!--滚动-->
-                <div  class="am-u-sm-12 am-u-md-12 am-u-lg-4 widget-margin-bottom-lg ">
-                    <div class="widget am-cf widget-body-lg" style="margin: 1px">
-                        <div class="widget-body am-fr">
-                            <div class="am-slider am-slider-default" >
-                                <ul class="am-slides">
-                                    <li><img src="assets/img/test1.png" alt=""></li>
-                                    <li><img src="assets/img/test2.png" alt=""></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="am-u-sm-12 am-u-md-12 am-u-lg-8 widget-margin-bottom-lg">
-
-                    <div class="widget am-cf widget-body-lg">
-
                         <div class="widget-body  am-fr">
-                            <div class="am-scrollable-horizontal ">
-                                <table width="100%" class="am-table am-table-compact am-text-nowrap tpl-table-black " id="example-r">
+
+
+
+
+
+                            <div class="am-u-sm-12">
+                                <table width="100%" class="am-table am-table-compact am-table-striped tpl-table-black " id="example-r">
                                     <thead>
                                     <tr >
                                         <th style="font-weight :500">品类</th>
@@ -360,6 +300,7 @@
                                         <td>2016-09-26</td>
                                         <td>
                                             <div class="tpl-table-black-operation">
+
                                                 <a href="javascript:;">
                                                     <i class="am-icon-chevron-down"></i> 下载
                                                 </a>
@@ -433,15 +374,26 @@
                                             </div>
                                         </td>
                                     </tr>
-
-
                                     <!-- more data -->
                                     </tbody>
                                 </table>
                             </div>
+
+                            <div class="am-u-lg-12 am-cf">
+                                <div class="am-fr">
+                                    <ul class="am-pagination tpl-pagination">
+                                        <li class="am-disabled"><a href="#">«</a></li>
+                                        <li class="am-active"><a href="#">1</a></li>
+                                        <li><a href="#">2</a></li>
+                                        <li><a href="#">3</a></li>
+                                        <li><a href="#">4</a></li>
+                                        <li><a href="#">5</a></li>
+                                        <li><a href="#">»</a></li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>
@@ -452,16 +404,9 @@
 <script src="assets/js/amazeui.datatables.min.js"></script>
 <script src="assets/js/dataTables.responsive.min.js"></script>
 <script src="assets/js/app.js"></script>
-<script src="assets/js/amazeui.switch.min.js"></script>
-<script src="assets/swiper/dist/jquery.min.js"></script>
-<script src="assets/swiper/dist/amazeui.swiper.min.js"></script>
+<script src="assets/js/amazeui.dialog.min.js"></script>
 <script>
-    $('.am-slider').flexslider();
-        $(function() {
-            $('.am-slider').flexslider({
-                directionNav: false,
-            });
-        });
+
 </script>
 </body>
 
