@@ -1,0 +1,366 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>图腾网 关于我们</title>
+	<link rel="shortcut icon" href="images/icon/favicon.ico">
+	<meta charset="utf-8">
+	<meta name="keywords" content="印刷 平台 创意 服务" />
+	<link rel="stylesheet" type="text/css" href="style/reset.css">
+	<link rel="stylesheet" type="text/css" href="style/main.css">
+	<link rel="stylesheet" type="text/css" href="style/product.css">
+	<style type="text/css">
+		#help{
+			font-family: "Microsoft Yahei", Verdana, Tahoma, sans-serif;
+		}
+		.h1{
+			padding-bottom:5px ;font-size: 16px;padding-top: 10px;
+		}
+		.h1:before {
+			content: "▪  ";
+			font-size: 16px;
+		}
+		h3{
+			font-size: x-large;
+			font-weight: 500;
+			padding-top: 10px;
+		}
+		.content p{
+			margin: 15px 30px;
+			line-height:20px;
+		}
+		.content div{
+			margin:15px 30px;
+			float:left
+		}
+		.title{font-size: larger;border-bottom:solid;border-width: thin }
+		small{color: #6d6d6d;font-size: xx-small}
+	</style>
+</head>
+<body>
+	<div id="headerBar">
+		<div class="topBar">
+			<div class="comWidth">
+				<div class="leftArea fl">
+					<a href="javascript:void(0)" id="addFav" class="collection">送至：江苏省</a>
+				</div>
+
+				<ul class="rightArea fr">
+						<li class="user_center">
+							<i class="icon_img"><img src="images/icon/icon_usercenter.png"></i>
+							<a href="user/user-main.html">个人中心</a>
+							<div style="display:none">
+								<a href="#">我的模板</a>
+								<a href="#">个人信息</a>
+								<a href="user/user-order.html">我的订单</a>
+							</div>
+						</li>
+						<li class="shop_car">
+							<i class="icon_img"><img src="images/icon/icon_shopcar.png"></i>
+							<a href="shopcar.html">购物车</a>
+						</li>
+						<li class="help">
+							<a href="help.html">帮助</a>
+						</li>
+						<li><a href="#">联系我们</a></li>
+				</ul>
+				<!--用户-->
+				<ul class="inLogin fr">
+					<li class="loginOk" style="display: none">
+						<a href="#" class="user_name"></a>
+						<a href="javascript:void(0)">退出</a>
+					</li>
+					<li class="loginResiter">
+						<a href="../login.html?id=1">Hi ~ [登录]</a>
+						<a href="../login.html?id=2">[注册]</a>
+					</li>
+					<li class="tdesigner">
+						<i class="icon_img"><img src="images/icon/icon_designcenter.png"></i>
+						<a href="#">设计师入口</a>
+					</li>
+				</ul>
+
+			</div>
+		</div>
+		<div class="logoBar">
+			<div class="comWidth">
+				<div class="logo fl">
+					<a href="index.html">
+						<img src="images/logo.png" alt="图腾网" height="60">
+					</a>
+				</div>
+				<div class="searchBar fl">
+					<div class="search_box">
+						<ul class="search_select fl">
+							<li value="商品" class="selection active">商品</li>
+							<li value="模板" class="selection">模板</li>
+						</ul>
+						<input type="text" value="请输入您需要的设计" onfocus="this.value=''" onblur="if(this.value==''){this.value='请输入您需要的设计'}" class="search_text fl">				
+						<input type="submit" value="搜 索" class="search_btn fr">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="navBox comWidth">
+				<div class="shopClass fl">
+					<div class="shopTitle">
+						<span>全部商品</span>
+					</div>
+					<div class="shopContainer">
+						<ul class="shop_list">
+							<li>
+								<a class="shop_name" href="#">名片<b class="mark_right">></b></a>
+								<ul class="shop_content">
+									<li><a href="#">PVC</a></li>
+									<li><a href="#">常规纸质</a></li>
+								</ul>
+							</li>
+							<li>
+								<a class="shop_name" href="#">展架<b class="mark_right">></b></a>
+								<ul class="shop_content">
+									<li><a href="#">X展架</a></li>
+									<li><a href="#">门型展架</a></li>
+									<li><a href="#">易拉宝</a></li>
+								</ul>
+							</li>
+							<li>
+								<a class="shop_name" href="#">写真<b class="mark_right">></b></a>
+								<ul class="shop_content">
+									<li><a href="#">灯箱片</a></li>
+									<li><a href="#">背胶写真</a></li>
+									<li><a href="#">无胶写真</a></li>
+									<li><a href="#">PVC胶写真</a></li>
+									<li><a href="#">写真布</a></li>
+								</ul>
+							</li>
+							<li>
+								<a class="shop_name" href="#">喷绘<b class="mark_right">></b></a>
+								<ul class="shop_content">
+									<li><a href="#">520布</a></li>
+									<li><a href="#">550布</a></li>
+									<li><a href="#">750布</a></li>
+								</ul>
+							</li>
+							<li>
+								<a class="shop_name" href="#">宣传单<b class="mark_right">></b></a>
+								<ul class="shop_content">
+									<li><a href="#">单页</a></li>
+									<li><a href="#">折页</a></li>
+									<li><a href="#">桌卡内页</a></li>
+								</ul>
+							</li>
+							<li>
+								<a class="shop_name" href="#">胶贴纸<b class="mark_right">></b></a>
+								<ul class="shop_content">
+									<li><a href="#">PVC胶贴纸</a></li>
+									<li><a href="#">不干胶贴纸</a></li>
+									<li><a href="#">滴胶贴纸</a></li>
+								</ul>
+							</li>
+							<li>
+								<a class="shop_name" href="#">宣传册</a>
+							</li>
+							<li>
+								<a class="shop_name" href="#">礼品定制<b class="mark_right">></b></a>
+								<ul class="shop_content">
+									<li><a href="#">广告袋</a></li>
+									<li><a href="#">T-恤</a></li>
+									<li><a href="#">马克杯</a></li>
+									<li><a href="#">广告扇</a></li>
+									<li><a href="#">纸杯</a></li>
+									<li><a href="#">伞</a></li>
+									<li><a href="#">便签</a></li>
+									<li><a href="#">笔记本</a></li>
+									<li><a href="#">台历</a></li>
+									<li><a href="#">鸭舌帽</a></li>
+									<li><a href="#">鼠标垫</a></li>
+									<li><a href="#">信封</a></li>
+									<li><a href="#">档案袋</a></li>
+									<li><a href="#">纸箱</a></li>
+									<li><a href="#">胶带</a></li>
+									<li><a href="#">布基物料</a></li>
+								</ul>
+							</li>
+							<li>
+								<a class="shop_name" href="#">板材<b class="mark_right">></b></a>
+								<ul class="shop_content">
+									<li><a href="javascript:void(0)">亚克力</a></li>
+									<li><a href="javascript:void(0)">KT板</a></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<ul class="nav fl">
+					<li class="nav_li">
+						<a href="#" class="nav_name">礼品定制</a>
+					</li>
+					<li class="nav_li">
+						<a href="#" class="nav_name">胶贴纸</a>
+					</li>
+					<li class="nav_li">
+						<a href="#" class="nav_name">宣传单</a>
+					</li>
+					<li class="nav_li">
+						<a href="#" class="nav_name">喷绘</a>
+					</li>
+					<li class="nav_li">
+						<a href="../product_card.html" class="nav_name">名片</a>
+					</li>
+				</ul>
+					
+			</div>
+		
+	</div>
+
+	<!--************************************主内容开始************************************************-->
+	<div class="productContainer comWidth" id="help">
+		<table style="margin: 0;padding: 0;margin-top:20px">
+			<tr>
+				<td width="180px" style="background-color: #fff;padding-left: 6px;vertical-align: top">
+					<ul style="padding: 20px;padding-top: 10px;">
+						<li class="h1"><a href="#guanyu" class="link">关于我们</a></li>
+						<li class="h1"><a href="#lianxi" class="link">联系我们</a></li>
+						<li class="h1"><a href="#shangwu" class="link">商务合作</a></li>
+						<li class="h1"><a href="#meiti" class="link">媒体报道</a></li>
+						<li class="h1"><a href="#banquan" class="link" id="bq">版权声明</a></li>
+					</ul>
+				</td>
+				<td width="20"></td>
+				<!--正文内容-->
+				<td width="1040" style="background-color: #fff" valign="top">
+					<div style="margin: 20px" id="guanyu">
+						<h3 style="text-align: center;color: #23598f">关于我们</h3>
+						<div class="content">
+							<p>关于我们的正文关于我们的正文关于我们的正文关于我们的正文关于我们的正文关于我们的正文关于我们的正文关于我们的正文关于我们的正文关于我们的正文关于我们的正文关于我们的正文关于我们的正文关于我们的正文关于我们的正文关于我们的正文关于我们的正文关于我们的正文关于我们的正文关于我们的正文关于我们的正文关于我们的正文关于我们的正文关于我们的正文关于我们的正文</p>
+							<p>关于我们的正文关于我们的正文关于我们的正文关于我们的正文关于我们的正文关于我们的正文关于我们的正文关于我们的正文关于我们的正文关于我们的正文关于我</p>
+							<p>关于我们的正文关于我们的正文关于我们的正文关于我们的正文关于我们的正文关于我们的正文关于我们的正文关于我们的正文关于我们的正文关于我们的正文关于我们的正文关于我们的正文关于我们的正文关于我们的正文关于我们的正文关于我们的正文关于我们的正文关于我们的正文关于我们的正文关于我们的正文关于我们的正文关于我们的正文关于我们的正文关于我们的正文关于我们的正文</p>
+							<p>关于我们的正文关于我们的正文关于我们的正文关于我们的正文关于我们的正文关于我们的正文关于我们的正文关于我们的正文关于我们的正文关于我们的正文关于我们的正文关于我们的正文关于我们的正文关于我们的正文关于我们的正文关于我们的正文关于我们的正文关于我们的正文关于我们的正文关于我们的正文关于我们的正文关于我们的正文关于我们的正文关于我们的正文关于我们的正文</p>
+						</div>
+						<a href="#" onclick="goTop();return false;" style="font-size:12px;text-align:right;margin-left: 900px">回到顶部</a>
+					</div>
+					<div style="margin: 20px" id="lianxi">
+						<h3 style="text-align: center;color: #23598f">联系我们</h3>
+						<div class="content">
+							<p>电话：</p>
+							<p>邮箱：</p>
+							<p>地址：</p>
+						</div>
+						<a href="#" onclick="goTop();return false;" style="font-size:12px;text-align:right;margin-left: 900px">回到顶部</a>
+					</div>
+					<div style="margin: 20px" id="guanyu">
+						<h3 style="text-align: center;color: #23598f">商务合作</h3>
+						<div class="content">
+							<p>商务合作的正文商务合作的正文商务合作的正文商务合作的正文商务合作的正文商务合作的正文商务合作的正文商务合作的正文商务合作的正文商务合作的正文商务合作的正文商务合作的正文商务合作的正文商务合作的正文商务合作的正文</p>
+						</div>
+						<a href="#" onclick="goTop();return false;" style="font-size:12px;text-align:right;margin-left: 900px">回到顶部</a>
+					</div>
+					<div style="margin: 20px" id="meiti">
+						<h3 style="text-align: center;color: #23598f">媒体报道</h3>
+						<div class="content">
+							<p class="title">云适配发布HTML5生态报告Amaze UI成最受欢迎框架 <small>form CSDN</small></p>
+							<p>随着HTML5标准的成熟以及企业应用的落地，HTML5正在从根本上改变开发者开发web应用的方式，从桌面浏览器到移动应用，HTML5语言和标准都正在影响并将继续影响着各种操作平台。
+							<p>近日，全球领先的企业级浏览器及HTML5解决方案提供商云适配发布了《2017年HTML5开发者生态报告》。报告显示，由于HTML5前端开发在国内兴起时间不长，我国HTML5开发从业者普遍偏年轻，但是开发者普遍看好HTML5技术在未来的发展。</p>
+							<p>据了解，这是继云适配连续两年发布HTML5开发者和企业应用市场调研报告之后，再次针对HTML5开发者展开的更为全面和深入的一次调研。报告主要针对HTML5前端开发者的从业情况、学习动机、HTML5技术开发和应用等方面进行了系统调研和分析。</p>
+							<p>在此次报告中，我们发现，开发者使用频率最高的前端开发框架名单中，云适配出品的Amaze UI排名第二，仅次于Bootstrap，占到此次调查人群的31%。</p>
+							<p>作为提升开发者效率的重要工具，前端框架好不好用，开发素材是否丰富，如何选择适合自己的前端框架，一直是开发者探讨的话题。作为以轻量级、模块化、移动优先的HTML5开源前端跨屏框架，Amaze UI 满足了开发者在选择前端框架时对兼容性、组件化、稳定性等方面的需求。从兼容性来看，相比国外框架，Amaze UI 关注中文排版和国内开发需求，根据用户代理调整字体，实现更好的中文排版效果；兼顾国内主流浏览器及 App 内置浏览器兼容支持。
+								而从组建上考虑，AmazeUI组件丰富，含有近 80 个 CSS 组件、40 余 JS 组件，更有多个包含不同主题的 Web 组件，可快速构建界面出色、体验优秀的跨屏页面，能够大幅提升开发者的效率。稳定性上，Amaze UI 基于社区丰富的jQuery开发，沿袭高性能、可复用、易扩展等特性，保证企业应用技术栈保持国际领先，同时满足从小屏逐步扩展到大屏，最终实现所有屏幕适配，为企业适配不同终端节约了大量成本。
+							</p>
+							<p>
+								Amaze UI是云适配在2014年底推出的前端开源框架，作为国内最流行的HTML5前端框架，Amaze UI目前在Github上收获Star数近万，服务于全球50万开发者。
+								为满足开发者针对多平台的开发需求，2016年8月，云适配发布了基于React的Amaze UI Touch版，专为移动打造，在技术实现、交互设计上只考虑主流移动设备，保证代码轻、性能高。
+								2016年9月，云适配又联手阿里钉钉推出了Amaze UI for 钉钉，界面风格与钉钉设计规范完全统一的移动端web组件库，以帮助企业开发者，快速开发出钉钉微应用系统。
+							</p>
+						</div>
+						<a href="#" onclick="goTop();return false;" style="font-size:12px;text-align:right;margin-left: 900px">回到顶部</a>
+						<div class="content">
+							<p class="title">云适配发布HTML5生态报告Amaze UI成最受欢迎框架 <small>form CSDN</small></p>
+							<p>随着HTML5标准的成熟以及企业应用的落地，HTML5正在从根本上改变开发者开发web应用的方式，从桌面浏览器到移动应用，HTML5语言和标准都正在影响并将继续影响着各种操作平台。
+							<p>近日，全球领先的企业级浏览器及HTML5解决方案提供商云适配发布了《2017年HTML5开发者生态报告》。报告显示，由于HTML5前端开发在国内兴起时间不长，我国HTML5开发从业者普遍偏年轻，但是开发者普遍看好HTML5技术在未来的发展。</p>
+							<p>据了解，这是继云适配连续两年发布HTML5开发者和企业应用市场调研报告之后，再次针对HTML5开发者展开的更为全面和深入的一次调研。报告主要针对HTML5前端开发者的从业情况、学习动机、HTML5技术开发和应用等方面进行了系统调研和分析。</p>
+							<p>在此次报告中，我们发现，开发者使用频率最高的前端开发框架名单中，云适配出品的Amaze UI排名第二，仅次于Bootstrap，占到此次调查人群的31%。</p>
+							<div><img src="http://articles.csdn.net/uploads/allimg/170323/14493B340-0.png" alt=""></div>
+							<p>作为提升开发者效率的重要工具，前端框架好不好用，开发素材是否丰富，如何选择适合自己的前端框架，一直是开发者探讨的话题。作为以轻量级、模块化、移动优先的HTML5开源前端跨屏框架，Amaze UI 满足了开发者在选择前端框架时对兼容性、组件化、稳定性等方面的需求。从兼容性来看，相比国外框架，Amaze UI 关注中文排版和国内开发需求，根据用户代理调整字体，实现更好的中文排版效果；兼顾国内主流浏览器及 App 内置浏览器兼容支持。
+								而从组建上考虑，AmazeUI组件丰富，含有近 80 个 CSS 组件、40 余 JS 组件，更有多个包含不同主题的 Web 组件，可快速构建界面出色、体验优秀的跨屏页面，能够大幅提升开发者的效率。稳定性上，Amaze UI 基于社区丰富的jQuery开发，沿袭高性能、可复用、易扩展等特性，保证企业应用技术栈保持国际领先，同时满足从小屏逐步扩展到大屏，最终实现所有屏幕适配，为企业适配不同终端节约了大量成本。
+							</p>
+							<p>
+								Amaze UI是云适配在2014年底推出的前端开源框架，作为国内最流行的HTML5前端框架，Amaze UI目前在Github上收获Star数近万，服务于全球50万开发者。
+								为满足开发者针对多平台的开发需求，2016年8月，云适配发布了基于React的Amaze UI Touch版，专为移动打造，在技术实现、交互设计上只考虑主流移动设备，保证代码轻、性能高。
+								2016年9月，云适配又联手阿里钉钉推出了Amaze UI for 钉钉，界面风格与钉钉设计规范完全统一的移动端web组件库，以帮助企业开发者，快速开发出钉钉微应用系统。
+							</p>
+						</div>
+						<a href="#" onclick="goTop();return false;" style="font-size:12px;text-align:right;margin-left: 900px">回到顶部</a>
+					</div>
+					<div style="margin: 20px" id="banquan">
+						<h3 style="text-align: center;color: #23598f">版权声明</h3>
+						<div class="content">
+							<p>版权声明的正文</p>
+						</div>
+						<a href="#" onclick="goTop();return false;" style="font-size:12px;text-align:right;margin-left: 900px">回到顶部</a>
+					</div>
+					<p>——</p><p>——</p><p>——</p><p>——</p><p>——</p><p>——</p><p>——</p><p>——</p><p>——</p><p>——</p><p>——</p><p>——</p><p>——</p><p>——</p>
+					<p>——</p><p>——</p><p>——</p><p>——</p><p>——</p><p>——</p><p>——</p><p>——</p><p>——</p><p>——</p><p>——</p><p>——</p><p>——</p><p>——</p>
+				</td>
+			</tr>
+		</table>
+	</div>
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------>
+	<footer>
+		<div class="comWidth">
+			<p>
+				<a target="_blank" href="#">关于我们</a>|
+				<a target="_blank" href="#">联系我们</a>|
+				<a target="_blank" href="#">媒体报道</a>|
+				<a target="_blank" href="#">商业合作</a>|
+				<a target="_blank" href="#">版权声明</a>
+			</p>
+			<p>CopyRight?2005-2016 图腾 苏ICP备05005325号-2 经营许可证编号:鄂ICP备05005325号 企业营业执照：420111000102120</p>
+		</div>
+	</footer>
+</body>
+<script type="text/javascript" src="lib/jquery-3.1.0.min.js"></script>
+<script type="text/javascript" src="lib/jquery.spinner.js"></script>
+<script type="text/javascript" src='js/product.js'></script>
+<script type="text/javascript" src='js/public.js'></script>
+<script>
+    $('.link').click(function () {
+        $('html, body').animate({
+            scrollTop: $($.attr(this, 'href')).offset().top-100
+        }, 500);
+        return false;
+    });
+</script>
+<script language="javascript">
+    function goTop(acceleration, time) {
+        acceleration = acceleration || 0.1;
+        time = time || 16;
+        var x1 = 0;
+        var y1 = 0;
+        var x2 = 0;
+        var y2 = 0;
+        var x3 = 0;
+        var y3 = 0;
+        if (document.documentElement) {
+            x1 = document.documentElement.scrollLeft || 0;
+            y1 = document.documentElement.scrollTop || 0;
+        }
+        if (document.body) {
+            x2 = document.body.scrollLeft || 0;
+            y2 = document.body.scrollTop || 0;
+        }
+        var x3 = window.scrollX || 0;
+        var y3 = window.scrollY || 0;
+// 滚动条到页面顶部的水平距离
+        var x = Math.max(x1, Math.max(x2, x3));
+// 滚动条到页面顶部的垂直距离
+        var y = Math.max(y1, Math.max(y2, y3));
+// 滚动距离 = 目前距离 / 速度, 因为距离原来越小, 速度是大于 1 的数, 所以滚动距离会越来越小
+        var speed = 1 + acceleration;
+        window.scrollTo(Math.floor(x / speed), Math.floor(y / speed));
+// 如果距离不为零, 继续调用迭代本函数
+        if (x > 0 || y > 0) {
+            var invokeFunction = "goTop(" + acceleration + ", " + time + ")";
+            window.setTimeout(invokeFunction, time);
+        }
+    }
+</script>
+</html>
