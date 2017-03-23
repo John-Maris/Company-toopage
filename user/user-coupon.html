@@ -15,7 +15,75 @@
   <link rel="stylesheet" type="text/css" href="../style/reset.css">
   <link rel="stylesheet" type="text/css" href="../style/main.css">
   <link rel="stylesheet" type="text/css" href="style/user.css">
-  <link rel="stylesheet" type="text/css" href="style/user-main.css">
+  <link rel="stylesheet" type="text/css" href="style/user-order.css">
+	<link rel="stylesheet" type="text/css" href="style/iconfont.css">
+	<style type="text/css">
+		.cou-tb{
+			margin-left: 10px;
+		}
+		.cou-td{
+			width: 250px;
+		}
+		.coupon-box{
+			padding-left: 5px;
+		}
+		.main{
+			background-image: url(images/coupon-bg.png);
+			width: 230px;height: 150px;
+		}
+		.main table{
+			margin:0 auto ;
+			color: white;
+			padding-top: 25px;
+		}
+		.main .money{
+			font-size: 56px;
+		}
+		.main .yuan{
+			padding-top: 8px;
+			font-size: 20px;
+		}
+		.main .diyong{
+			padding-bottom: 12px;
+			font-size: 20px;
+		}
+		.main .man{
+			text-align: center;
+		}
+		.content{
+			width: 230px;
+			height: 140px;
+			background-color:#f6f6f6;
+		}
+		.content table{
+			height: 140px;
+			width: 210px;
+			margin: 0 auto;
+		}
+		.content .con{
+			vertical-align: top;
+			font-size: 13px;
+		}
+		.content .use{
+			width: 160px;height: 30px;
+			background-color: #d47474;
+			border: none;
+			color: white;font-family: "Microsoft Yahei", "黑体", "微软雅黑";
+			font-size: larger;
+			margin-left: 25px;
+			margin-top: 20px;
+			margin-bottom: 10px;
+		}
+		.tag{
+			background-image: url(images/tag.png);
+			width: 54px;height: 23px;
+			font-size: xx-small;
+			padding: 4px 0 0 7px;
+			overflow:hidden;
+			position: relative;
+			top: -280px;left: -5px;
+		}
+	</style>
 </head>
 <body>
 	<div id="headerBar">
@@ -28,11 +96,11 @@
 				<ul class="rightArea fr">
 						<li class="user_center">
 							<i class="icon_img"><img src="../images/icon/icon_usercenter.png"></i>
-							<a href="#">个人中心</a>
+							<a href="user-main.html">个人中心</a>
 							<div style="display:none">
 								<a href="#">我的模板</a>
 								<a href="#">个人信息</a>
-								<a href="user-order.html">我的订单</a>
+								<a href="#">我的订单</a>
 							</div>
 						</li>
 						<li class="shop_car">
@@ -196,13 +264,15 @@
 		<div class="breadCrumbs">
 			<a href="../index.html">首页</a>
 			<span>></span>
-			<span><a href="user-main.html">个人中心</a></span>
+			<span><a href="user-main.html">个人中心</a></span><span>></span>
+			<span><a href="user-order.html">我的订单</a></span>
 		</div>
+		<!--通用订单左侧菜单栏-->
 		<div class="leftList fl">
 			<div class="menu">
 				<dl class="fore1">
 					<dd>交易管理</dd>
-					<dt><a href="user-order.html">我的订单</a></dt>
+					<dt><a href="javascript:void(0)" class="active">我的订单</a></dt>
 				</dl>
 				<dl class="fore2">
 					<dd>模板管理</dd>
@@ -211,8 +281,8 @@
 				</dl>
 				<dl class="fore3">
 					<dd>账户管理</dd>
-					<dt><a href="javascript:void(0)">账户余额</a></dt>
-					<dt><a href="javascript:void(0)">我的积分</a></dt>
+					<dt><a href="user-balance.html">账户余额</a></dt>
+					<dt><a href="user-point.html">我的积分</a></dt>
 					<dt><a href="javascript:void(0)">优惠券</a></dt>
 				</dl>
 				<dl class="fore4">
@@ -232,61 +302,185 @@
 				</dl>
 			</div>
 		</div>
-		<div class="rightArea fr">
-			<div class="user">
-				<div class="user-account">
-					<ul>
-						<li class="user-account-icon fl">
-							<div class="user-account-head">
-								<img src="../images/icon/avatar.png" alt="用户头像">
-							</div>
-							<span class="user-nickname">豆豆豆小逗</span>
-						</li>
-						<li class="user-account-info fl">
-							<div class="user-list">
-								<span class="user-list-name">账户积分:</span>
-								<a href="#">1000</a>
-							</div>
-							<div class="user-list">
-								<span class='user-list-name'>优惠券:</span>
-								<a href="javascript:void(0)" class="font-orange">1</a>张
-							</div>
-							<div class="user-list">
-								<span class="user-list-name">账户余额:</span>
-								<a href="javascript:void(0)" class="font-orange" id="account-balance">12228.233</a>元
-								<div class="user-list-button">
-									<a class="more" href="#">账户明细</a>
-									<input type="button" name="recharge" value="充值">
+		<!--订单内容右侧部分开始-->
+		<div class="rightArea fl">
+			<div class="myOrder">
+				<div class="title-line">
+					<h4 class="fl">优惠券</h4>
+					<div class="order-search fr">
+						<input type="text" name="order-search" placeholder="请输入订单编号">
+						<input type="button" name="search">
+					</div>
+				</div>
+				<div class="order-content">
+					<table class="cou-tb">
+						<tr>
+							<td class="cou-td">
+								<div class="coupon-box">
+									<div class="main" >
+										<table>
+											<tr>
+												<td rowspan="2" class="money">50</td>
+												<td class="yuan">YUAN</td>
+											</tr>
+											<tr>
+												<td class="diyong">抵用券</td>
+											</tr>
+											<tr>
+												<td colspan="2" class="man">满200元可用<br><i class="iconfont icon-chevron-down"></i></td>
+											</tr>
+										</table>
+									</div>
+									<div class="content">
+										<table>
+											<tr class="con"><td>1、</td><td>该优惠券不可叠加使用</td></tr>
+											<tr class="con"><td>2、</td><td>有效期：2017年1月1日—2017年12月31日</td></tr>
+											<tr class="con"><td>3、</td><td>优惠券适用于全品类</td></tr>
+											<tr><td colspan="2"><button class="use">立即使用</button></td></tr>
+										</table>
+									</div>
+									<div class="tag">即将过期</div>
 								</div>
-							</div>
-						</li>
-						<li class="user-account-balance fr">
-							<dl>
-								<dd class="icon-balance"><img src="../images/icon/personal//icon-account-pay.png" alt="待付款"></dd>
-								<dt>待付款</dt>
-							</dl>
-							<dl>
-								<dd class="icon-balance"><img src="../images/icon/personal/icon-account-design.png" alt="待设计"></dd>
-								<dt>待设计</dt>
-							</dl>
-							<dl>
-								<dd class="icon-balance"><img src="../images/icon/personal//icon-account-delivery.png" alt="待发货"></dd>
-								<dt>待发货</dt>
-							</dl>
-							<dl>
-								<dd class="icon-balance"><img src="../images/icon/personal//icon-account-judg.png" alt="待评价"></dd>
-								<dt>待评价</dt>
-							</dl>
-						</li>
-					</ul>
-				</div>
-				<div class="user-order">
-					<div class="data-title">我的订单</div>
-					<a class="more" href="#">查看全部订单</a>
-				</div>
-				<div class="consume-data">
-					<div class="data-title">最近一年消费</div>
-					<a class="more" href="#">查看消费记录</a>
+							</td>
+							<td class="cou-td">
+								<div class="coupon-box">
+									<div class="main" >
+										<table>
+											<tr>
+												<td rowspan="2" class="money">50</td>
+												<td class="yuan">YUAN</td>
+											</tr>
+											<tr>
+												<td class="diyong">抵用券</td>
+											</tr>
+											<tr>
+												<td colspan="2" class="man">满200元可用<br><i class="iconfont icon-chevron-down"></i></td>
+											</tr>
+										</table>
+									</div>
+									<div class="content">
+										<table>
+											<tr class="con"><td>1、</td><td>该优惠券不可叠加使用</td></tr>
+											<tr class="con"><td>2、</td><td>有效期：2017年1月1日—2017年12月31日</td></tr>
+											<tr class="con"><td>3、</td><td>优惠券适用于全品类</td></tr>
+											<tr><td colspan="2"><button class="use">立即使用</button></td></tr>
+										</table>
+									</div>
+									<div class="tag">即将过期</div>
+								</div>
+							</td>
+							<td class="cou-td">
+								<div class="coupon-box">
+									<div class="main" >
+										<table>
+											<tr>
+												<td rowspan="2" class="money">50</td>
+												<td class="yuan">YUAN</td>
+											</tr>
+											<tr>
+												<td class="diyong">抵用券</td>
+											</tr>
+											<tr>
+												<td colspan="2" class="man">满200元可用<br><i class="iconfont icon-chevron-down"></i></td>
+											</tr>
+										</table>
+									</div>
+									<div class="content">
+										<table>
+											<tr class="con"><td>1、</td><td>该优惠券不可叠加使用</td></tr>
+											<tr class="con"><td>2、</td><td>有效期：2017年1月1日—2017年12月31日</td></tr>
+											<tr class="con"><td>3、</td><td>优惠券适用于全品类</td></tr>
+											<tr><td colspan="2"><button class="use">立即使用</button></td></tr>
+										</table>
+									</div>
+									<div class="tag">即将过期</div>
+								</div>
+							</td>
+							<td class="cou-td">
+								<div class="coupon-box">
+									<div class="main" >
+										<table>
+											<tr>
+												<td rowspan="2" class="money">50</td>
+												<td class="yuan">YUAN</td>
+											</tr>
+											<tr>
+												<td class="diyong">抵用券</td>
+											</tr>
+											<tr>
+												<td colspan="2" class="man">满200元可用<br><i class="iconfont icon-chevron-down"></i></td>
+											</tr>
+										</table>
+									</div>
+									<div class="content">
+										<table>
+											<tr class="con"><td>1、</td><td>该优惠券不可叠加使用</td></tr>
+											<tr class="con"><td>2、</td><td>有效期：2017年1月1日—2017年12月31日</td></tr>
+											<tr class="con"><td>3、</td><td>优惠券适用于全品类</td></tr>
+											<tr><td colspan="2"><button class="use">立即使用</button></td></tr>
+										</table>
+									</div>
+									<div class="tag">即将过期</div>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td class="cou-td">
+								<div class="coupon-box">
+									<div class="main" >
+										<table>
+											<tr>
+												<td rowspan="2" class="money">50</td>
+												<td class="yuan">YUAN</td>
+											</tr>
+											<tr>
+												<td class="diyong">抵用券</td>
+											</tr>
+											<tr>
+												<td colspan="2" class="man">满200元可用<br><i class="iconfont icon-chevron-down"></i></td>
+											</tr>
+										</table>
+									</div>
+									<div class="content">
+										<table>
+											<tr class="con"><td>1、</td><td>该优惠券不可叠加使用</td></tr>
+											<tr class="con"><td>2、</td><td>有效期：2017年1月1日—2017年12月31日</td></tr>
+											<tr class="con"><td>3、</td><td>优惠券适用于全品类</td></tr>
+											<tr><td colspan="2"><button class="use">立即使用</button></td></tr>
+										</table>
+									</div>
+								</div>
+							</td>
+							<td class="cou-td">
+								<div class="coupon-box">
+									<div class="main" >
+										<table>
+											<tr>
+												<td rowspan="2" class="money">50</td>
+												<td class="yuan">YUAN</td>
+											</tr>
+											<tr>
+												<td class="diyong">抵用券</td>
+											</tr>
+											<tr>
+												<td colspan="2" class="man">满200元可用<br><i class="iconfont icon-chevron-down"></i></td>
+											</tr>
+										</table>
+									</div>
+									<div class="content">
+										<table>
+											<tr class="con"><td>1、</td><td>该优惠券不可叠加使用</td></tr>
+											<tr class="con"><td>2、</td><td>有效期：2017年1月1日—2017年12月31日</td></tr>
+											<tr class="con"><td>3、</td><td>优惠券适用于全品类</td></tr>
+											<tr><td colspan="2"><button class="use">立即使用</button></td></tr>
+										</table>
+									</div>
+								</div>
+							</td>
+
+						</tr>
+					</table>
+
 				</div>
 			</div>
 		</div>
@@ -307,14 +501,11 @@
   <script src="../lib/jquery-3.1.0.min.js"></script>
   <script type="text/javascript" src='../js/public.js'></script>
   <script src="../lib/layer/layer.js"></script>
-  <script type="text/javascript" src='js/user.js'></script>
+  <script src="js/user-order.js"></script>
 <script>
 
 	$(document).ready(function(){
 		//对账户余额进行金额格式设置
-		var $balance = $('#account-balance');
-		var after_num = fmoney($balance.text(),2);
-		$balance.text(after_num);
 
 	})
 </script>
