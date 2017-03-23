@@ -23,14 +23,7 @@
             position: relative;
             top:15px;
         }
-        tbody tr th{
-            padding: 5px 0;
-            font-weight: 500;
-        }
-        thead tr th{
-            font-weight :800;
-            padding: 10px 0
-        }
+        
         .title-line ul
         {
             list-style:none; /* 去掉ul前面的符号 */
@@ -56,15 +49,15 @@
         {
             background-color:#dddddd ;
         }
-        .order-list div{
-            margin-bottom: 5px;
-        }
-        .order-list li{
-            padding-bottom: 15px;
-            margin-bottom: 15px;
-            border-bottom:solid silver ;
-            border-width: thin;
-        }
+        td{padding:5px 0;}
+    </style>
+    <style>
+        #wrapper {margin: 20px auto;}
+        #wrapper .input_check {position: absolute;width: 100px;height: 50px;visibility: hidden;}
+        #wrapper label{width: 100px;text-align: center;height: 50px;line-height:50px;   }
+        #wrapper span {position: relative;}
+        #wrapper .input_check+label {display: inline-block;width: 100px;height: 50px;background: url(../images/checkbox.png) no-repeat;}
+        #wrapper .input_check:checked+label {background-position: -96px;}
     </style>
 </head>
 <body>
@@ -269,9 +262,9 @@
             </dl>
             <dl class="fore4">
                 <dd>个人资料设置</dd>
-                <dt><a href="javascript:void(0)">修改基本信息</a></dt>
+                <dt><a href="user-basicInfor.html.html">修改基本信息</a></dt>
                 <dt><a href="javascript:void(0)">修改密码</a></dt>
-                <dt><a href="javascript:void(0)">我的收货地址</a></dt>
+                <dt><a href="user-address.html">我的收货地址</a></dt>
             </dl>
             <dl class="fore5">
                 <dd>消息提醒</dd>
@@ -289,50 +282,55 @@
         <div class="myOrder">
             <div class="title-line">
                 <ul >
-                    <li><a href="user-system.html"><div>系统公告</div></a></li>
-                    <li><a href="user-notice.html"><div>账户通知</div></a></li>
-                    <li><a href="user-coupon-notice.html"><div>优惠券通知</div></a></li>
+                    <li><a href="user-basicInfor.html.html"><div>基本信息</div></a></li>
+                    <li><a href="user-safeInfor.html"><div>安全信息</div></a></li>
+                    <li><a href="user-address.html"><div>收货地址</div></a></li>
                 </ul>
             </div>
             <div class="order-content">
                 <div class="order-listbox">
                     <div class="order-listbox-titleline" style="background: #FFFFFF;">
-                        <h4>账户通知</h4>
+                        <h4>基本信息</h4>
                     </div>
-                    <ul class="order-list">
-                        <li>
-                            <div>
-                                <span class="h3">账户通知标题</span>
-                                <span class="fr" style="color: #888">2017-03-10 17:26:19</span>
-                            </div>
-                            <p>账户通知详情</p>
-                            
-                        </li>
-                        <li>
-                            <div>
-                                <span class="h3">账户通知标题</span>
-                                <span class="fr" style="color: #888">2017-03-10 17:26:19</span>
-                            </div>
-                            <p>账户通知详情</p>
-                            
-                        </li>
-                        <li>
-                            <div>
-                                <span class="h3">账户通知标题</span>
-                                <span class="fr" style="color: #888">2017-03-10 17:26:19</span>
-                            </div>
-                            <p>账户通知详情</p>
-                            
-                        </li>
-                        <li style="border: none">
-                            <div>
-                                <span class="h3">账户通知标题</span>
-                                <span class="fr" style="color: #888">2017-03-10 17:26:19</span>
-                            </div>
-                            <p>账户通知详情</p>
-                            
-                        </li>
-                    </ul>
+                    <table style="width: 100%">
+                        <tr>
+                            <td>昵称：</td>
+                            <td width="600px"><input type="text"></td>
+                            <td rowspan="5"><div style="width: 200px;height: 300px;background: lightgrey">头像插件</div></td>
+                        </tr>
+                        <tr>
+                            <td>性别：</td>
+                            <td>
+                                <input type="radio" checked="checked" name="Sex" value="male" />男&nbsp;&nbsp;
+                                <input type="radio" name="Sex" value="female" />女
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>行业：</td>
+                            <td><select name="select" id="select_k1" class="xla">
+                                <option value="行业">行业</option>
+                                <option value="行业1">行业1</option>
+                                <option value="行业2">行业2</option>
+                            </select></td>
+                        </tr>
+                        <tr>
+                            <td >偏好：</td>
+                            <td><small>请选择您常用的分类，给您最精确的推荐</small></td>
+                        </tr>
+                        <tr>
+                            <td ></td>
+                            <td style="vertical-align:top">
+                                <div id="wrapper" style="margin: 0">
+                                    <span><input type="checkbox"class="input_check" id="check1"><label for="check1">扁平</label></span>
+                                    <span><input type="checkbox"class="input_check" id="check2"><label for="check2">极简</label></span>
+                                    <span><input type="checkbox"class="input_check" id="check3"><label for="check3">多彩</label></span>
+                                    <span><input type="checkbox"class="input_check" id="check4"><label for="check4">商务</label></span><br>
+                                    <span><input type="checkbox"class="input_check" id="check5"><label for="check5">中式</label></span>
+                                    <span><input type="checkbox"class="input_check" id="check6"><label for="check6">欧式</label></span>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
                 </div>
             </div>
         </div>

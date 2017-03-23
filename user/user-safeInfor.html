@@ -2,7 +2,7 @@
 <!-- saved from url=(0014)about:internet -->
 <html>
 <head>
-    <title>账户余额</title>
+    <title>安全信息</title>
     <meta charset="utf-8">
     <link rel="shortcut icon" href="../images/icon/favicon.ico">
     <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
@@ -16,7 +16,7 @@
     <link rel="stylesheet" type="text/css" href="../style/main.css">
     <link rel="stylesheet" type="text/css" href="style/user.css">
     <link rel="stylesheet" type="text/css" href="style/user-order.css">
-
+    <link rel="stylesheet" type="text/css" href="style/iconfont.css">
     <style type="text/css">
         .title-line span
         {
@@ -56,15 +56,28 @@
         {
             background-color:#dddddd ;
         }
-        .order-list div{
-            margin-bottom: 5px;
-        }
+
         .order-list li{
-            padding-bottom: 15px;
             margin-bottom: 15px;
             border-bottom:solid silver ;
             border-width: thin;
+            height: 40px;
         }
+        .order-list .fl{
+            width: 200px;
+            text-align: center;
+            border-right: inset;
+            border-width: thin;
+            border-color: #cccccc;
+        }
+        .order-list a{
+            color: #0a628f;
+        }
+        i{
+            margin-right: 5px;
+        }
+
+
     </style>
 </head>
 <body>
@@ -269,9 +282,9 @@
             </dl>
             <dl class="fore4">
                 <dd>个人资料设置</dd>
-                <dt><a href="javascript:void(0)">修改基本信息</a></dt>
+                <dt><a href="user-basicInfor.html.html">修改基本信息</a></dt>
                 <dt><a href="javascript:void(0)">修改密码</a></dt>
-                <dt><a href="javascript:void(0)">我的收货地址</a></dt>
+                <dt><a href="user-address.html"">我的收货地址</a></dt>
             </dl>
             <dl class="fore5">
                 <dd>消息提醒</dd>
@@ -289,48 +302,36 @@
         <div class="myOrder">
             <div class="title-line">
                 <ul >
-                    <li><a href="user-system.html"><div>系统公告</div></a></li>
-                    <li><a href="user-notice.html"><div>账户通知</div></a></li>
-                    <li><a href="user-coupon-notice.html"><div>优惠券通知</div></a></li>
+                    <li><a href="user-basicInfor.html.html"><div>基本信息</div></a></li>
+                    <li><a href="user-safeInfor.html"><div>安全信息</div></a></li>
+                    <li><a href="user-address.html"><div>收货地址</div></a></li>
                 </ul>
             </div>
             <div class="order-content">
                 <div class="order-listbox">
-                    <div class="order-listbox-titleline" style="background: #FFFFFF;">
+                    <div class="order-listbox-titleline" style="background: #FFFFFF">
                         <h4>账户通知</h4>
                     </div>
                     <ul class="order-list">
-                        <li>
-                            <div>
-                                <span class="h3">账户通知标题</span>
-                                <span class="fr" style="color: #888">2017-03-10 17:26:19</span>
-                            </div>
-                            <p>账户通知详情</p>
-                            
+                        <li style="padding-top: 5px">
+                            <div class="fl" ><i class="iconfont green l icon-icon-test"></i>登录密码</div>
+                            <div style="width: 700px;margin: 0;padding-left: 220px">互联网账号存在被盗风险，请您定期更改密码以保护账号安全<a href="javascript:void(0)" class="fr">修改</a></div>
                         </li>
                         <li>
-                            <div>
-                                <span class="h3">账户通知标题</span>
-                                <span class="fr" style="color: #888">2017-03-10 17:26:19</span>
-                            </div>
-                            <p>账户通知详情</p>
-                            
+                            <div class="fl" ><i class="iconfont red l icon-icon-test1"></i>支付密码</div>
+                            <div style="width: 700px;margin: 0;padding-left: 220px">建议您定期更换支付密码，提高安全性<a href="javascript:void(0)" class="fr">修改</a></div>
                         </li>
                         <li>
-                            <div>
-                                <span class="h3">账户通知标题</span>
-                                <span class="fr" style="color: #888">2017-03-10 17:26:19</span>
-                            </div>
-                            <p>账户通知详情</p>
-                            
+                            <div class="fl" ><i class="iconfont green l icon-icon-test"></i>手机验证</div>
+                            <div style="width: 700px;margin: 0;padding-left: 220px">您验证的手机：<span>185*****519</span>若已丢失或停用请立即更换，避免账号被盗<a href="javascript:void(0)" class="fr">修改</a></div>
                         </li>
-                        <li style="border: none">
-                            <div>
-                                <span class="h3">账户通知标题</span>
-                                <span class="fr" style="color: #888">2017-03-10 17:26:19</span>
-                            </div>
-                            <p>账户通知详情</p>
-                            
+                        <li>
+                            <div class="fl" ><i class="iconfont yellow l icon-icon-test2"></i>邮箱验证</div>
+                            <div style="width: 700px;margin: 0;padding-left: 220px">您验证的邮箱：<span>30*******@qq.com</span><a href="javascript:void(0)" class="fr">修改</a></div>
+                        </li>
+                        <li>
+                            <div class="fl" ><i class="iconfont yellow l icon-icon-test2"></i>账户申诉</div>
+                            <div style="width: 700px;margin: 0;padding-left: 220px">如果以上方式无法完成修改密码或修改手机等，可申请人工审核，客服将在24小时内受理<a href="javascript:void(0)" class="fr">立即申诉</a></div>
                         </li>
                     </ul>
                 </div>
