@@ -128,3 +128,10 @@ $('.nav_li').click(function(){
 	}
 })
 
+//控制上传文件须知出现于消失
+$('.file_summary_icon').hover(function() {
+	$(this).siblings('.file_summary_content').removeClass('dis-none')
+}, function() {
+	$(this).siblings('.file_summary_content').addClass('dis-none')
+	/* Stuff to do when the mouse leaves the element */
+});
