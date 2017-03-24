@@ -4,7 +4,8 @@ $(document).ready(function(){
 		hide_on();
 		tab_on()//切换默认地址
 		tab_delete();//默认下无法删除
-		tab_coupon()//切换优惠方式
+		tab_coupon();//切换优惠方式
+		add_adress();//新增收货地址
 	})
 	function tab_adress(){
 
@@ -66,4 +67,12 @@ $(document).ready(function(){
 			point_content.siblings().hide();
 		});
 
+	}
+	function add_adress(){
+
+		 var btn_address = $('.orderAdress .add')
+		 btn_address.click(function() {
+		 	public_add_adress();
+		 	/* Act on the event */
+		 });
 	}

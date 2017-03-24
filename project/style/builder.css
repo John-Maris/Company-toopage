@@ -1,0 +1,31 @@
+/*生成器开始*/
+.buildContent
+{
+	width: 100%;
+	display: block;
+	overflow: hidden;
+	margin-top: 20px;
+}
+.buildContent .modelTitle
+{
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	background-color: #e4e6ea;
+}
+.buildContent .modelTitle span
+{
+	margin-left: 20px;
+}
+
+.buildContent .model
+{
+	width: 100%;
+	height:770px;
+	overflow: hidden;
+	background-color: #f6f6f6;
+}
+.buildContent .model.modelLeft
+{
+		
+}	

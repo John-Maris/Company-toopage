@@ -1,0 +1,405 @@
+body
+{
+	background-color: #fff;
+}
+.logoBar
+{
+	background-color: #f9f9f9;
+	border:none;
+	height: 130px;
+}
+.logoBar .stepBar
+{
+	display: inline-block;
+	margin-top: 50px;
+	overflow: hidden;
+	position: relative;
+}
+.logoBar .stepBar .step-li
+{
+	width: 160px;
+	height: 42px;
+	float: left;
+	position: relative;
+	text-align: center;
+}
+.logoBar .stepBar .step-li .step-name
+{
+	display: block;
+	font-size: 12px;
+	color: #ccc; 
+	font-weight: bold;
+}
+.logoBar .stepBar .step-li .step-line
+{
+	display: inline-block;
+	width: 160px;
+	height: 20px;
+	background: url(../images/icon/common/icon_flow_b.png) 0px 100% no-repeat;
+	margin-top: 6px;
+	margin-left: 75px;
+}
+.logoBar .stepBar .step-last .step-line
+{
+	width: 20px;
+	height: 20px;
+	margin-left: 0px;
+	background: url(../images/icon/common/icon_flow_b.png) 100% no-repeat;
+}
+/*状态属性值*/
+.logoBar .stepBar .finished .step-name,.logoBar .stepBar .now .step-name
+{
+	color:#23598f;
+}
+.logoBar .stepBar .finished .step-line
+{
+	background-image: url(../images/icon/common/icon_flow_com.png);
+}
+.logoBar .stepBar .now .step-line
+{
+	background-image:url(../images/icon/common/icon_flow_now.png);
+}
+/*主内容开始*/
+.mainContainer
+{
+	background-color: #fff;
+	padding-top: 30px;
+}
+.mainContainer .order
+{
+	margin-top: 20px;
+	position: relative;
+	overflow: hidden;
+	border-bottom: 1px solid #ccc;
+
+}
+.mainContainer .orderAdress h4
+{
+	font-size: 15px;
+}
+.mainContainer .orderAdress .add
+{
+	display: inline-block;
+	position: absolute;
+	top: 0;
+	right: 0;
+	color: #23598f;
+
+}
+.mainContainer .orderAdress .adress-section
+{
+	margin-top: 20px;
+	margin-left: 20px;
+}
+.mainContainer .orderAdress .adress-section h4
+{
+	margin-bottom: 20px;
+}
+.mainContainer .orderAdress .adress-section .take
+{
+	float: left;
+	margin-bottom: 20px;
+	position: relative;
+}
+.mainContainer .orderAdress .adress-section .take .take-name
+{
+	width: 140px;
+	height: 32px;
+	overflow: hidden;
+	line-height: 32px;
+	text-align: center;
+	border:2px solid #e5e5e5;
+	cursor: pointer;
+}
+.mainContainer .orderAdress .adress-section .take .take-content,.take .handle
+{
+	height: 36px;
+	line-height: 36px;
+	padding-left: 40px;
+}
+.take .handle{
+	display: none;
+}
+.take .handle span
+{
+	font-size: 12px;
+	margin-right:26px;
+	cursor: pointer;
+}
+.mainContainer .orderAdress .adress-section .on:after
+{
+	content: '默认地址';
+	width: 60px;
+	height: 20px;
+	font-size: 12px;
+	text-align: center;
+	line-height: 20px;
+	color: #fff;
+	background-color: #ccc;
+	position: absolute;
+	top: 2px;
+	right: -100px;
+}
+.mainContainer .orderAdress .adress-section .active .take-content
+{
+	background-color: #aec2d7;
+}
+.mainContainer .orderAdress .adress-section .active .take-name
+{
+	border-color: #23598f;
+}
+.mainContainer .orderAdress .adress-section .active .handle
+{
+	display: block;
+}
+/*支付方式*/
+.orderPayment .payment-content
+{
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	padding: 20px 0px 20px 20px;
+}
+.orderPayment .payment
+{
+	margin-right: 20px;
+	float: left;
+	width:116px;
+	height: 26px;
+	overflow: hidden;
+	line-height: 26px;
+	text-align: center;
+	border:2px solid #e5e5e5;
+	cursor: pointer;
+}
+.orderPayment .payment.active
+{
+	border-color: #23598f;
+}
+.orderPayment .payment.active a
+{
+	color: #000;
+}
+
+/*商品清单*/
+.orderProduct .productList .product-content
+{
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	padding: 20px 0px 20px 0px;
+}
+.orderProduct .productList .order-title
+{	
+	width: 100%;
+	height: 29px;
+	background-color: #f6f6f6;
+	border-bottom: 1px solid #e5e5e5;
+	line-height: 29px;
+	font-size: 13px;
+}
+.orderProduct .productList .order-title div
+{
+	text-align: center;
+}
+.orderProduct .productList .order-title .t-name
+{
+	width: 240px;
+}
+.orderProduct .productList .order-title .t-attr
+{
+	width: 240px;
+}
+.orderProduct .productList .order-title .t-price
+{
+	width: 256px;
+}
+.orderProduct .productList .order-title .t-quantity
+{
+	width: 218px;
+}
+.orderProduct .productList .order-title .t-sum
+{
+	width: 246px;
+}
+.orderProduct .productList .product-content .product-info
+{
+	width: 100%;
+	padding: 20px 0px 0px 22px;
+}
+.orderProduct .productList .product-content .product-info>li
+{
+	padding-bottom: 10px;
+	border-bottom: 1px solid #eee;
+	margin-bottom: 10px;
+}
+.orderProduct .productList .product-content .product-info .p-content
+{
+	height: 60px;
+	overflow: hidden;
+	color: #666;
+}
+.p-content li
+{
+	float: left;
+	height: 60px;
+	line-height: 60px;
+	font-size: 13px;
+	text-align: center;
+}
+.p-content .p-name
+{
+	width: 140px;
+	text-align: left;
+	display: inline-block;
+	margin-left: 20px;
+}
+.p-content .p-attr
+{
+	width: 240px;
+}
+.p-content .p-price
+{
+	width: 256px;
+}
+.p-content .p-quantity
+{
+	width: 218px;
+}
+.p-content .p-sum
+{
+	width: 246px;
+}
+/*发票信息*/
+.invoice-content
+{
+	padding: 20px 0px 20px 20px;
+}
+.invoice-content span
+{
+	font-size: 13px;
+	margin-right: 30px;
+}
+.invoice-content .invoice-edit
+{
+	color: #23598f;
+	font-size: 13px;
+}
+.orderCoupon .coupon-content
+{
+	padding: 20px 0px 20px 0px;
+}
+.orderCoupon .coupon-content .coupon-title
+{
+	width: 100%;
+	height: 30px;
+	background-color: #f6f6f6;
+	font-size: 13px;
+	line-height: 30px;
+}
+.orderCoupon .coupon-content .coupon-title>span
+{
+	display: inline-block;
+	width: 140px;
+	text-align: center;
+	color: #666;
+	cursor: pointer;
+}
+.orderCoupon .coupon-content .coupon-title .on
+{	
+	margin-top: 1px;
+	height: 29px;
+	background-color: #fff;
+	color: #23598f;
+
+}
+.orderCoupon .coupon-content .coupon-colume
+{
+	font-size: 13px;
+	padding: 20px 0px 20px 20px;
+}
+/*订单总额*/
+.orderSum .statistic
+{
+	width: auto;
+	height: auto;
+	overflow: hidden;
+	padding:0px 20px 20px 0px;
+
+}
+.orderSum .statistic .list
+{
+	width: 300px;
+	height: 20px;
+    line-height: 20px;
+    margin-bottom: 5px;
+    zoom: 1;
+    font-size: 12px;
+
+}
+.orderSum .statistic .list span
+{
+	width: 180px;
+    margin-right: 20px;
+    float: left;
+    text-align: right;
+}
+.orderSum .statistic .list>em
+{
+	float: right;
+	color: #666;
+	font-style:normal;
+}
+/*确认订单部分*/
+.trade-foot
+{
+	height: 38px;
+	line-height: 20px;
+    text-align: right;
+    width: 100%;
+    color: #666;
+    background-color: #f4f4f4;
+    padding: 20px 0px 20px 0;
+}
+.trade-foot .price-info,.trade-foot .guest-info
+{
+	margin-right: 30px;
+	margin-bottom: 
+}
+.trade-foot .price-info span
+{
+	display: inline-block;
+}
+.trade-foot .price-info .price-title
+{
+	width: 150px;
+	text-align: left;
+}
+.trade-foot .price-info .price-num
+{
+	font-size: 18px;
+	color: #e46414;
+}
+.guest-info .guest-ad
+{
+	margin-right: 28px;
+}
+/*提交按钮*/
+.orderSummit .checkout-submit
+{
+	margin-top: 20px;
+	display: inline-block;
+	width: 160px;
+	height: 40px;
+	background-color: #23598f;
+	color: #fff;
+	font-size: 18px;
+	border-radius: 10px;
+	border:none;
+}
+footer
+{
+	background:transparent;
+	color:#999;
+	border-top: 1px solid #23598f;
+}

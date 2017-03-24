@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<!-- saved from url=(0014)about:internet -->
+<html>
+<head>
+    <title>账户余额</title>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="../images/icon/favicon.ico">
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+    <meta name="viewport" content="width=device-width,user-scalable=yes">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><!--优先使用IE最新版本和chorme-->
+    <meta name="renderer" content="webkit"><!--360使用webkit内核-->
+    <meta http-equiv="Cache-Control" content="no-siteapp"><!--禁止百度转码-->
+    <meta name="keywords" content="印刷 平台 创意 服务" />
+    <link rel="shortcut icon" href="images/icon/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="../style/reset.css">
+    <link rel="stylesheet" type="text/css" href="../style/main.css">
+    <link rel="stylesheet" type="text/css" href="style/user.css">
+    <link rel="stylesheet" type="text/css" href="style/user-order.css">
+    <link rel="stylesheet" href="style/bootstrap.css">
+    <script type="text/javascript" src="TreeGrid/jquery-1.3.2.min.js"></script>
+    <script type="text/javascript" src="TreeGrid/TreeGrid.js"></script>
+    <link type="text/css" rel="stylesheet" href="TreeGrid/TreeGrid.css"/>
+    <style type="text/css">
+
+        .progress{
+            height: 25px;
+            background: #dddddd;
+            padding: 5px;
+            overflow: visible;
+            margin-top: 10px;
+            width: 99%;
+        }
+        .progress .progress-bar{
+            border-radius: 20px;
+            position: relative;
+            animation: animate-positive 2s;
+        }
+        .progress .progress-value{
+            display: block;
+            padding: 3px 7px;
+            font-size: 13px;
+            color: #fff;
+            border-radius: 4px;
+            background: #191919;
+            border: 1px solid #000;
+            position: absolute;
+            top: -40px;
+            right: -10px;
+        }
+        .progress .progress-value:after{
+            content: "";
+            border-top: 10px solid #191919;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            position: absolute;
+            bottom: -6px;
+            left: 26%;
+        }
+        .progress-bar.active{
+            animation: reverse progress-bar-stripes 0.40s linear infinite, animate-positive 2s;
+        }
+        @-webkit-keyframes animate-positive{
+            0% { width: 0; }
+        }
+        @keyframes animate-positive{
+            0% { width: 0; }
+        }
+
+    </style>
+
+</head>
+<body>
+<div id="headerBar">
+    <div class="topBar">
+        <div class="comWidth">
+            <div class="leftArea fl">
+                <a href="javascript:void(0)" id="addFav" class="collection">送至：江苏省</a>
+            </div>
+
+            <ul class="rightArea fr">
+                <li class="user_center">
+                    <i class="icon_img"><img src="../images/icon/icon_usercenter.png"></i>
+                    <a href="user-main.html">个人中心</a>
+                    <div style="display:none">
+                        <a href="#">我的模板</a>
+                        <a href="#">个人信息</a>
+                        <a href="#">我的订单</a>
+                    </div>
+                </li>
+                <li class="shop_car">
+                    <i class="icon_img"><img src="../images/icon/icon_shopcar.png"></i>
+                    <a href="../shopcar.html">购物车</a>
+                </li>
+                <li class="help">
+                    <a href="../help.html">帮助</a>
+                </li>
+                <li><a href="#">联系我们</a></li>
+            </ul>
+            <!--用户-->
+            <ul class="inLogin fr">
+                <li class="loginOk" style="display: none">
+                    <a href="#" class="user_name"></a>
+                    <a href="javascript:void(0)">退出</a>
+                </li>
+                <li class="loginResiter">
+                    <a href="../login.html?id=1">Hi ~ [登录]</a>
+                    <a href="../login.html?id=2">[注册]</a>
+                </li>
+                <li class="tdesigner">
+                    <i class="icon_img"><img src="../images/icon/icon_designcenter.png"></i>
+                    <a href="#">设计师入口</a>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+    <div class="logoBar">
+        <div class="comWidth">
+            <div class="logo fl">
+                <a href="../index.html">
+                    <img src="../images/logo.png" alt="图腾网" height="60">
+                </a>
+            </div>
+            <div class="searchBar fl">
+                <div class="search_box">
+                    <ul class="search_select fl">
+                        <li value="商品" class="selection active">商品</li>
+                        <li value="模板" class="selection">模板</li>
+                    </ul>
+                    <input type="text" value="请输入您需要的设计" onfocus="this.value=''" onblur="if(this.value==''){this.value='请输入您需要的设计'}" class="search_text fl">
+                    <input type="submit" value="搜 索" class="search_btn fr">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="navBox comWidth">
+        <div class="shopClass fl">
+            <div class="shopTitle">
+                <span>全部商品</span>
+            </div>
+            <div class="shopContainer">
+                <ul class="shop_list">
+                    <li>
+                        <a class="shop_name" href="#">名片<b class="mark_right">></b></a>
+                        <ul class="shop_content">
+                            <li><a href="#">PVC</a></li>
+                            <li><a href="../product.html">常规纸质</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="shop_name" href="#">展架<b class="mark_right">></b></a>
+                        <ul class="shop_content">
+                            <li><a href="#">x展架</a></li>
+                            <li><a href="#">门型展架</a></li>
+                            <li><a href="#">易拉宝</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="shop_name" href="#">写真<b class="mark_right">></b></a>
+                        <ul class="shop_content">
+                            <li><a href="#">灯箱片</a></li>
+                            <li><a href="#">背胶写真</a></li>
+                            <li><a href="#">无胶写真</a></li>
+                            <li><a href="#">PVC胶写真</a></li>
+                            <li><a href="#">写真布</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="shop_name" href="#">喷绘<b class="mark_right">></b></a>
+                        <ul class="shop_content">
+                            <li><a href="#">520布</a></li>
+                            <li><a href="#">550布</a></li>
+                            <li><a href="#">750布</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="shop_name" href="#">宣传单<b class="mark_right">></b></a>
+                        <ul class="shop_content">
+                            <li><a href="#">单页</a></li>
+                            <li><a href="#">折页</a></li>
+                            <li><a href="#">桌卡内页</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="shop_name" href="#">胶贴纸<b class="mark_right">></b></a>
+                        <ul class="shop_content">
+                            <li><a href="#">PVC胶贴纸</a></li>
+                            <li><a href="#">不干胶贴纸</a></li>
+                            <li><a href="#">滴胶贴纸</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="shop_name" href="#">宣传册</a>
+                    </li>
+                    <li>
+                        <a class="shop_name" href="#">礼品定制<b class="mark_right">></b></a>
+                        <ul class="shop_content">
+                            <li><a href="#">广告袋</a></li>
+                            <li><a href="#">T-恤</a></li>
+                            <li><a href="#">马克杯</a></li>
+                            <li><a href="#">广告扇</a></li>
+                            <li><a href="#">纸杯</a></li>
+                            <li><a href="#">伞</a></li>
+                            <li><a href="#">便签</a></li>
+                            <li><a href="#">笔记本</a></li>
+                            <li><a href="#">台历</a></li>
+                            <li><a href="#">鸭舌帽</a></li>
+                            <li><a href="#">鼠标垫</a></li>
+                            <li><a href="#">信封</a></li>
+                            <li><a href="#">档案袋</a></li>
+                            <li><a href="#">纸箱</a></li>
+                            <li><a href="#">胶带</a></li>
+                            <li><a href="#">布基物料</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="shop_name" href="#">板材<b class="mark_right">></b></a>
+                        <ul class="shop_content">
+                            <li><a href="javascript:void(0)">亚克力</a></li>
+                            <li><a href="javascript:void(0)">KT板</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <ul class="nav fl">
+            <li class="nav_li">
+                <a href="#" class="nav_name">礼品定制</a>
+            </li>
+            <li class="nav_li">
+                <a href="#" class="nav_name">胶贴纸</a>
+            </li>
+            <li class="nav_li">
+                <a href="#" class="nav_name">宣传单</a>
+            </li>
+            <li class="nav_li">
+                <a href="#" class="nav_name">喷绘</a>
+            </li>
+            <li class="nav_li">
+                <a href="../product_card.html" class="nav_name">名片</a>
+            </li>
+        </ul>
+
+    </div>
+
+</div>
+<div class="mainContainer comWidth">
+    <div class="breadCrumbs">
+        <a href="../index.html">首页</a>
+        <span>></span>
+        <span><a href="user-main.html">个人中心</a></span><span>></span>
+        <span><a href="user-balance.html">账户余额</a></span>
+    </div>
+    <!--通用订单左侧菜单栏-->
+    <div class="leftList fl">
+        <div class="menu">
+            <dl class="fore1">
+                <dd>交易管理</dd>
+                <dt><a href="user-order.html" >我的订单</a></dt>
+            </dl>
+            <dl class="fore2">
+                <dd>模板管理</dd>
+                <dt><a href="javascript:void(0)">我的模板</a></dt>
+                <dt><a href="javascript:void(0)">我的收藏</a></dt>
+            </dl>
+            <dl class="fore3">
+                <dd>账户管理</dd>
+                <dt><a href="user-balance.html">账户余额</a></dt>
+                <dt><a href="user-point.html" >我的积分</a></dt>
+                <dt><a href="user-coupon-notice.html">优惠券</a></dt>
+            </dl>
+            <dl class="fore4">
+                <dd>个人资料设置</dd>
+                <dt><a href="javascript:void(0)">修改基本信息</a></dt>
+                <dt><a href="javascript:void(0)">修改密码</a></dt>
+                <dt><a href="javascript:void(0)">我的收货地址</a></dt>
+            </dl>
+            <dl class="fore5">
+                <dd>消息提醒</dd>
+                <dt><a href="javascript:void(0)" class="active">系统通知</a></dt>
+                <dt><a href="javascript:void(0)">账户公告</a></dt>
+                <dt><a href="javascript:void(0)">优惠卷通知</a></dt>
+            </dl>
+            <dl class="fore6">
+                <dd><a href="javascript:void(0)">我的文件</a></dd>
+            </dl>
+        </div>
+    </div>
+    <!--订单内容右侧部分开始-->
+    <div class="rightArea fl">
+        <div class="myOrder">
+            <div class="order-content">
+                <div class="order-listbox">
+                    <h4>我的空间 <span>2.3GB</span>/<span>10GB</span></h4>
+                </div>
+                    <div class="progress" style="height: 10px">
+                        <div class="progress-bar progress-bar-info progress-bar-striped active" style="width: 23%">
+                        </div>
+                    </div>
+                <div class="order-listbox">
+                    <div class="order-listbox-titleline" style="background: #FFFFFF;">
+                        <h4>文件上传</h4>
+                        <div class="uploader blue">
+                            <input type="text" class="filename" readonly/>
+                            <input type="button" name="file" class="button" value="Browse..."/>
+                            <input type="file" size="30"/>
+                        </div>
+
+                    </div>
+                    <div  style="background: #FFFFFF;margin-top: 40px">
+                        <input type="button" value="关闭所有节点" onclick="expandAll('N')">
+                        <input type="button" value="展开所有节点" onclick="expandAll('Y')">
+                        <input type="button" value="取得当前行的数据" onclick="selectedItem()"><br>
+                        当前选中的行：<input type="text" id="currentRow" size="110">
+
+                        <div id="div1"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<footer>
+    <div class="comWidth">
+        <p>
+            <a target="_blank" href="#">关于我们</a>|
+            <a target="_blank" href="#">联系我们</a>|
+            <a target="_blank" href="#">媒体报道</a>|
+            <a target="_blank" href="#">商业合作</a>|
+            <a target="_blank" href="#">版权声明</a>
+        </p>
+        <p>CopyRight?2005-2016 图派 苏ICP备05005325号-2 经营许可证编号:苏ICP备05005325号 企业营业执照：320205000241790</p>
+    </div>
+</footer>
+</body>
+<script src="../lib/jquery-3.1.0.min.js"></script>
+<script type="text/javascript" src='../js/public.js'></script>
+<script src="../lib/layer/layer.js"></script>
+<script src="js/user-order.js"></script>
+<script>
+
+    $(document).ready(function(){
+        //对账户余额进行金额格式设置
+
+    })
+
+</script>
+<script language="javascript">
+    var config = {
+        id: "tg1",
+        width: "800",
+        renderTo: "div1",
+        headerAlign: "left",
+        headerHeight: "30",
+        dataAlign: "left",
+        indentation: "20",
+        folderOpenIcon: "TreeGrid/images/folderOpen.gif",
+        folderCloseIcon: "TreeGrid/images/folderClose.gif",
+        defaultLeafIcon: "TreeGrid/images/defaultLeaf.gif",
+        hoverRowBackground: "false",
+        folderColumnIndex: "1",
+        itemClick: "itemClickEvent",
+        columns:[
+            {headerText: "", headerAlign: "center", dataAlign: "center", width: "20", handler: "customCheckBox"},
+            {headerText: "名称", dataField: "name", headerAlign: "center", handler: "customOrgName"},
+            {headerText: "ID", dataField: "id",headerAlign: "center",dataAlign: "center",width: "100",hidden: true},
+            {headerText: "大小", dataField: "lager", headerAlign: "center", dataAlign: "center", width: "100"},
+            {headerText: "修改日期", dataField: "assignee", headerAlign: "center", dataAlign: "center", width: "100"},
+        ],
+        data:[
+            {name: "名片", lager: "10m", assignee: "", children:[
+                {name: "PVC"},
+                {name: "常规纸质", children:[
+                    {name: "chlid1",id:"1",lager: "2.7m"},
+                    {name: "chlid2",id:"2",lager: "3.2m"},
+                    {name: "chlid3",id:"3",lager: "4.1m"}
+                ]}
+            ]},
+            {name: "展架", lager: "", assignee: "", children:[]},
+            {name: "喷绘", lager: "", assignee: "", children:[]}
+        ]
+    };
+
+    /*
+     单击数据行后触发该事件
+     id：行的id
+     index：行的索引。
+     data：json格式的行数据对象。
+     */
+    function itemClickEvent(id, index, data){
+        jQuery("#currentRow").val(id + ", " + index + ", " + TreeGrid.json2str(data));
+    }
+
+    /*
+     通过指定的方法来自定义栏数据
+     */
+    function customCheckBox(row, col){
+        return "<input type='checkbox'>";
+    }
+
+    function customOrgName(row, col){
+        var name = row[col.dataField] || "";
+        return name;
+    }
+
+    function customLook(row, col){
+        return "<a href='' style='color:blue;'>查看</a>";
+    }
+
+    //创建一个组件对象
+    var treeGrid = new TreeGrid(config);
+    treeGrid.show();
+
+    /*
+     展开、关闭所有节点。
+     isOpen=Y表示展开，isOpen=N表示关闭
+     */
+    function expandAll(isOpen){
+        treeGrid.expandAll(isOpen);
+    }
+
+    /*
+     取得当前选中的行，方法返回TreeGridItem对象
+     */
+    function selectedItem(){
+        var treeGridItem = treeGrid.getSelectedItem();
+        if(treeGridItem!=null){
+            //获取数据行属性值
+            //alert(treeGridItem.id + ", " + treeGridItem.index + ", " + treeGridItem.data.name);
+
+            //获取父数据行
+            var parent = treeGridItem.getParent();
+            if(parent!=null){
+                //jQuery("#currentRow").val(parent.data.name);
+            }
+
+            //获取子数据行集
+            var children = treeGridItem.getChildren();
+            if(children!=null && children.length>0){
+                jQuery("#currentRow").val(children[0].data.name);
+            }
+        }
+    }
+</script>
+</html>
+<style>
+    .uploader{
+    position:relative;
+    display:inline-block;
+    overflow:hidden;
+    cursor:default;
+    padding:0;
+    margin:10px 0px;
+    -moz-box-shadow:0px 0px 5px #ddd;
+    -webkit-box-shadow:0px 0px 5px #ddd;
+    box-shadow:0px 0px 5px #ddd;
+
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+    border-radius:5px;
+}
+
+.filename{
+    float:left;
+    display:inline-block;
+    outline:0 none;
+    height:32px;
+    width:180px;
+    margin:0;
+    padding:8px 10px;
+    overflow:hidden;
+    cursor:default;
+    border:1px solid;
+    border-right:0;
+    font:9pt/100% Arial, Helvetica, sans-serif; color:#777;
+    text-shadow:1px 1px 0px #fff;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+
+    -moz-border-radius:5px 0px 0px 5px;
+    -webkit-border-radius:5px 0px 0px 5px;
+    border-radius:5px 0px 0px 5px;
+
+    background:#f5f5f5;
+    background:-moz-linear-gradient(top, #fafafa 0%, #eee 100%);
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0%,#fafafa), color-stop(100%,#f5f5f5));
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#fafafa', endColorstr='#f5f5f5',GradientType=0);
+    border-color:#ccc;
+
+    -moz-box-shadow:0px 0px 1px #fff inset;
+    -webkit-box-shadow:0px 0px 1px #fff inset;
+    box-shadow:0px 0px 1px #fff inset;
+
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    box-sizing:border-box;
+}
+
+.button{
+    float:left;
+    height:32px;
+    display:inline-block;
+    outline:0 none;
+    padding:8px 12px;
+    margin:0;
+    cursor:pointer;
+    border:1px solid;
+    font:bold 9pt/100% Arial, Helvetica, sans-serif;
+
+    -moz-border-radius:0px 5px 5px 0px;
+    -webkit-border-radius:0px 5px 5px 0px;
+    border-radius:0px 5px 5px 0px;
+
+    -moz-box-shadow:0px 0px 1px #fff inset;
+    -webkit-box-shadow:0px 0px 1px #fff inset;
+    box-shadow:0px 0px 1px #fff inset;
+}
+
+
+.uploader input[type=file]{
+    position:absolute;
+    top:0; right:0; bottom:0;
+    border:0;
+    padding:0; margin:0;
+    height:30px;
+    cursor:pointer;
+    filter:alpha(opacity=0);
+    -moz-opacity:0;
+    -khtml-opacity: 0;
+    opacity:0;
+}
+
+input[type=button]::-moz-focus-inner{padding:0; border:0 none; -moz-box-sizing:content-box;}
+input[type=button]::-webkit-focus-inner{padding:0; border:0 none; -webkit-box-sizing:content-box;}
+input[type=text]::-moz-focus-inner{padding:0; border:0 none; -moz-box-sizing:content-box;}
+input[type=text]::-webkit-focus-inner{padding:0; border:0 none; -webkit-box-sizing:content-box;}
+
+
+/* Blue Color Scheme ------------------------ */
+
+.blue .button{
+    color:#fff;
+    text-shadow:1px 1px 0px #09365f;
+    background:#064884;
+    background:-moz-linear-gradient(top, #3b75b4 0%, #064884 100%);
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0%,#3b75b4), color-stop(100%,#064884));
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#3b75b4', endColorstr='#064884',GradientType=0);
+    border-color:#09365f;
+}
+
+.blue:hover .button{
+    background:#3b75b4;
+    background:-moz-linear-gradient(top, #064884 0%, #3b75b4 100%);
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0%,#064884), color-stop(100%,#3b75b4));
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#064884', endColorstr='#3b75b4',GradientType=0);
+}
+
+<script>$(function(){
+    $("input[type=file]").change(function(){$(this).parents(".uploader").find(".filename").val($(this).val());});
+    $("input[type=file]").each(function(){
+        if($(this).val()==""){$(this).parents(".uploader").find(".filename").val("No file selected...");}
+    });
+});
+</script>

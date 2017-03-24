@@ -1,0 +1,127 @@
+.title-line
+{
+	line-height: 50px;
+}
+.revise-title
+{
+	padding-left: 20px;
+}
+#sflex
+{
+	width: 510px;
+	height: 40px;
+}
+.stepflex
+{
+	text-align: center;
+	margin: 30px auto 60px auto;
+}
+.stepflex dl
+{
+	float: left;
+	position: relative;
+	width: 170px;
+	border-top: 5px solid #ccc;
+	font-size: 12px;
+}
+.stepflex .s-num
+{
+	position: relative;
+    margin: -13px auto 5px;
+    color: #fff;
+    font-weight: 700;
+    width: 20px;
+    height: 20px;
+    border-radius: 13px;
+    background-color: #ccc;
+    line-height: 20px;
+}
+.s-text
+{
+	color: #ccc;
+}
+dl.doing
+{
+	border-color: #23598f;
+}
+.doing .s-num
+{
+	background-color: #23598f;
+}
+.doing .s-text
+{
+	color: #23598f;
+}
+
+.form
+{
+	margin-left: 200px;
+}
+.form .item
+{
+	width: 100%;
+	display: inline-block;
+	margin-bottom: 30px;
+	line-height: 30px;
+}
+.form .item span.label
+{	
+	float: left;
+	width: 150px;
+	text-align: right;
+}
+
+
+.form .item .u-info
+{
+	font-size: 16px;
+	margin-right: 5px;
+}
+.form .item a
+{
+	font-size: 12px;
+	color: #23598f;
+}
+.form .item .checkcode
+{
+	width: 78px;
+	height: 28px;
+	border: 1px solid #ccc;
+}
+.form .item .input_password
+{
+	width: 178px;
+	height: 28px;
+	border: 1px solid #ccc;
+}
+.form .item .checkcode:focus
+{
+	border-color: #23598f;
+}
+
+.form .item a.btn-send
+{
+	margin-left: 90px;
+	display: block;
+	width: 120px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	border-radius: 10px;
+	background-color: #23598f;
+	color: #fff;
+	font-size: 15px;
+}
+.form .item a.btn-getcode
+{
+	display: inline-block;
+	width: 100px;
+    height: 28px;
+    line-height: 28px;
+    border-radius: 10px;
+    color: #fff;
+    background-color: #23598f;
+    font-size: 12px;
+    cursor: pointer;
+    text-align: center;
+}

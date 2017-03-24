@@ -8,6 +8,8 @@
 	<link rel="stylesheet" type="text/css" href="style/main.css">
 	<link rel="stylesheet" type="text/css" href="style/order.css">
 	<link rel="stylesheet" type="text/css" href="style/reset.css">
+	<link rel="stylesheet" type="text/css" href="lib/jquery-city/animate.min.css">
+	<link rel="stylesheet" type="text/css" href="lib/jquery-city/jquery.city.css">
 </head>
 <body>
 	<div id="headerBar">
@@ -120,7 +122,7 @@
 					<li class="take">
 						<div class="take-name fl">杭梦栩</div>
 						<div class="take-content fl">
-							<div class="fl">江苏省苏州市工业园区 娄葑镇中信大厦128号 加城大厦F5-D7</div>
+							<div class="fl">江苏省苏州市工业园区 娄葑镇中信大厦128号 加城大厦Fsd5-D7</div>
 							<div class="fl">185*****2519</div>
 							<div class="handle fl">
 								<span class="tab_on">设为默认地址</span>
@@ -310,7 +312,7 @@
 	        </div>
 		</div>
 	</div>
-	<footer>
+	<footer class="white_bg">
 		<div class="comWidth">
 			<p>
 				<a target="_blank" href="#">关于我们</a>|
@@ -322,8 +324,44 @@
 			<p>CopyRight?2005-2016 图腾 苏ICP备05005325号-2 经营许可证编号:苏ICP备05005325号 企业营业执照：320205000241790</p>
 		</div>
 	</footer>
+	<div id="addAdress">
+		<div class="adress-title">
+			<span>添加收货地址</span>
+		</div>
+		<div class="adress-content">
+			<div class="info">
+				<div>
+					<span class="info-title key">收货人：</span>
+					<input type="text" name="reciver" class="info-content">
+				</div>
+				<div>
+					<span class="info-title key">所在地区：</span>
+					<input type="text" name="reciver" class="info-content" id="txt-city">
+				</div>
+				<div>
+					<span class="info-title key">详细地址：</span>
+					<input type="text" name="reciver" class="info-content" style="width: 418px;">
+				</div>
+				<div>
+					<span class="info-title key">手机号：</span>
+					<input type="text" name="reciver" class="info-content" style="width: 138px;">
+					<span class="info-title">固话：</span>
+					<input type="text" name="reciver" class="info-content" style="width: 138px;">
+				</div>
+				<div>
+					<span class="info-title">备注：</span>
+					<input type="text" name="reciver" class="info-content" style="width: 418px;height: 58px;">
+				</div>
+				<div class="btn-info">
+					<button id="btn-saveAdress">保存收货地址</button>
+				</div>
+			</div>
+		</div>
+	</div>
 </body>
 <script type="text/javascript" src="lib/jquery-3.1.0.min.js"></script>
+<script type="text/javascript" src="lib/jquery-city/jquery.city.js"></script>
 <script type="text/javascript" src='js/public.js'></script>
 <script type="text/javascript" src='js/order.js'></script>
+<script type="text/javascript" src="lib/layer/layer.js"></script>
 </html>

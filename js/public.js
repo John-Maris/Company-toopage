@@ -112,3 +112,27 @@
 	$('.shopClass .shopTitle').click(function(){
 		window.location.href='../product-list.html';
 	})
+
+
+	//新增收货地址
+	function public_add_adress()
+	{
+		layer.open({
+                type:1,
+                title:false,
+                area:['auto','auto'],
+                content:$('#addAdress')
+
+      })
+			//收货地址选择地区
+	$(function(){
+		$('#txt-city').jcity({
+            urlOrData: '../lib/jquery-city/citydata.json',
+             animate: { showClass: 'animated fadeIn', hideClass: 'animated fadeOut'},  // 需要第一步引用的animate.min.css文件，也可以自己定义动画 
+             onChoice: function (data) {
+                 console.log(data);
+             }
+         });
+
+	})
+	}

@@ -117,6 +117,11 @@ body
 	line-height: 36px;
 	padding-left: 40px;
 }
+.mainContainer .orderAdress .adress-section .take .take-content
+{
+	width: 800px;
+	overflow: hidden;
+}
 .take .handle{
 	display: none;
 }

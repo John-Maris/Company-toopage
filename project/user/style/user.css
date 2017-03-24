@@ -1,0 +1,60 @@
+body
+{
+	background-color: #eee;
+}
+.mainContainer
+{
+	height: auto;
+	display: block;
+	overflow: hidden;
+}
+.mainContainer .leftList
+{
+	background-color: #fff;
+	width: 180px;
+	height: 800px;
+	margin-top: 20px;
+	position: relative; 
+}
+.mainContainer .leftList .menu
+{
+	width: 130px;
+	margin-left: 53px;
+	margin-right: auto;
+	margin-top: 30px;
+}
+.mainContainer .leftList .menu dl
+{
+	margin-top: 20px;
+	position: relative;
+}
+.mainContainer .leftList .menu dl dd
+{
+	font-size: 1em;
+}
+.mainContainer .leftList .menu dl dd:before
+{
+
+	width: 4px;
+	height: 4px;
+	content: '';
+	background-color: #23598f;
+	position: absolute;
+	top: 7px;
+	left: -15px;
+}
+.mainContainer .leftList .menu dl dt
+{
+	font-size: 12px;
+	margin-top: 12px;
+}
+.mainContainer .leftList .menu dl dt a:hover
+{
+	color:#23598f;
+}
+.mainContainer .leftList .menu dl dt a.active
+{
+	color: #23598f;
+	font-weight: bold;
+}
+

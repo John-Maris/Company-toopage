@@ -11,6 +11,7 @@ input,select,textarea{outline:none;border:none;background:none;}
 input[type=checkbox]{-webkit-appearance:checkbox;}
 textarea{resize:none;}
 a{text-decoration:none;color: #656565;}
+button{border: none;}
 
 /*清除浮动*/
 .clearfix:after{content:"";display: block;clear: both;}

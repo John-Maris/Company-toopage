@@ -63,11 +63,13 @@ body{background-color: #f9f9f9;}
  /*foot*/
  footer{width:100%;height: 80px;margin-top:40px;background-color: #23598f;text-align: center;padding-top: 15px;color: #fff;}
  footer p{margin-top: 5px;}
- footer p a{display: inline-block;}
+ footer p a{display: inline-block;color: #fff;}
+ footer.white_bg p a{color: #999};
+
 
 /*breadCrumbs面包屑导航*/
 .breadCrumbs{margin-top: 20px;}
-.breadCrumbs a:hover{color:#23598f; }
+.breadCrumbs a:hover{color:#23598f;}
 
 /*您可能还需要*/
 .floorFour{margin-top: 38px;}
@@ -91,3 +93,85 @@ body{background-color: #f9f9f9;}
 .price-color{color:#e66c1f;};
 .a-link-color{color: #23598f;}
 
+/*新增收货地址*/
+#addAdress
+{
+	width: 600px;
+	height: 400px;
+	display: none;
+	background-color: #fff;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+#addAdress .adress-title
+{
+	width: 100%;
+	height: 30px;
+	line-height: 30px;
+	background-color: #23598f;
+	box-sizing: border-box;
+	padding-left: 20px;
+}
+#addAdress .adress-title span
+{
+	color: #fff;
+	font-size: 14px;
+}
+#addAdress .adress-content
+{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	box-sizing: border-box;
+	padding: 30px 20px 20px 44px;
+}
+/*表格*/
+#addAdress .adress-content .info>div
+{
+	position: relative;
+	margin-bottom: 20px;
+
+}
+#addAdress .adress-content .info-title
+{
+	width: 70px;
+	display: inline-block;
+	font-size: 14px;
+	text-align: right;
+	
+}
+#addAdress .adress-content .key:before
+{
+	position: absolute;
+	content:"*";
+	color: #e46414;
+	top: 6px;
+	left: -14px;
+}
+#addAdress .adress-content .info-content
+{
+	height: 28px;
+	border: 1px solid #ccc;
+}
+#addAdress .adress-content .info-content[name='reciver']
+{
+	width: 198px;
+}
+#addAdress .adress-content .info>div .city-popup
+{
+	left: 74px;
+}
+div.btn-info
+{
+	text-align: right;
+}
+#btn-saveAdress
+{
+	width: 120px;
+	height: 30px;
+	border-radius: 10px;
+	background-color: #e46414;
+	color: #fff;
+	font-size: 12px;
+	cursor: pointer;
+}

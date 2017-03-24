@@ -2,7 +2,7 @@
 <!-- saved from url=(0014)about:internet -->
 <html>
 <head>
-  <title>个人中心</title>
+  <title>个人中心 我的订单</title>
   <meta charset="utf-8">
   <link rel="shortcut icon" href="../images/icon/favicon.ico">
   <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
@@ -196,7 +196,8 @@
 		<div class="breadCrumbs">
 			<a href="../index.html">首页</a>
 			<span>></span>
-			<span>个人中心</span>
+			<span><a href="user-main.html">个人中心</a></span><span>></span>
+			<span><a href="user-order.html">我的订单</a></span>
 		</div>
 		<!--通用订单左侧菜单栏-->
 		<div class="leftList fl">
@@ -206,24 +207,30 @@
 					<dt><a href="javascript:void(0)" class="active">我的订单</a></dt>
 				</dl>
 				<dl class="fore2">
-					<dd>文件管理</dd>
+					<dd>模板管理</dd>
 					<dt><a href="javascript:void(0)">我的模板</a></dt>
 					<dt><a href="javascript:void(0)">我的收藏</a></dt>
 				</dl>
 				<dl class="fore3">
 					<dd>账户管理</dd>
-					<dt><a href="javascript:void(0)">账户余额</a></dt>
-					<dt><a href="javascript:void(0)">我的积分</a></dt>
-					<dt><a href="javascript:void(0)">优惠券</a></dt>
+					<dt><a href="user-balance.html">账户余额</a></dt>
+					<dt><a href="user-point.html">我的积分</a></dt>
+					<dt><a href="user-coupon.html">优惠券</a></dt>
 				</dl>
 				<dl class="fore4">
 					<dd>个人资料设置</dd>
-					<dt><a href="javascript:void(0)">修改基本信息</a></dt>
-					<dt><a href="javascript:void(0)">修改密码</a></dt>
+					<dt><a href="user-basicInfor.html">修改基本信息</a></dt>
+					<dt><a href="user-safeInfor.html">修改密码</a></dt>
 					<dt><a href="javascript:void(0)">我的收货地址</a></dt>
 				</dl>
 				<dl class="fore5">
 					<dd>消息提醒</dd>
+					<dt><a href="user-notice.html?id=system">系统通知</a></dt>
+					<dt><a href="user-notice.html?id=balance">账户公告</a></dt>
+					<dt><a href="user-notice.html?id=coupon">优惠卷通知</a></dt>
+				</dl>
+				<dl class="fore6">
+					<dd><a href="javascript:void(0)">我的空间</a></dd>
 				</dl>
 			</div>
 		</div>
@@ -280,7 +287,7 @@
 											</a>
 										</li>
 										<li class="p-info">
-											<a href="shopcar.html" class="p-name">传统纸质名片</a>
+											<a href="#" class="p-name">传统纸质名片</a>
 											<div class="p-property"><!--订单产品已选属性-->
 												<span>单面烫金;</span>
 												<span>覆亚膜;</span><br>
@@ -505,9 +512,10 @@
 										<li class="p-receiver">
 											杭梦栩
 										</li>
-										<li class="p-state">待发货</li>
+										<li class="p-state">待确认</li>
 										<li class="p-handle">
-											<a href="#" class="btn-evaluate">查看</a>
+											<a href="#" class="btn-evaluate">添加要求</a>
+											<a href="#" class="btn-download">下载稿件</a>
 										</li>
 									</ul>
 								</div>
