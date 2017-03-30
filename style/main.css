@@ -87,7 +87,11 @@ body{background-color: #f9f9f9;}
 .floorFour .floor_list li .list_title .text_href a:hover{opacity: .7;}
 .floorFour .floor_list li .list_title .text_href span{font-size: .9em;display:block;color: #e66c1f;width: auto;text-overflow: ellipsis;white-space: nowrap;float: right;margin-right: 20px;}
 
+/*框架*/
+.k12-4{width: 28% }
+.k12-7{width: 58.3333%}
 /*常规颜色*/
-.price-color{color:#e66c1f;};
+.price-color{color:#e66c1f;}
 .a-link-color{color: #23598f;}
-
+.bg-white{background-color: #FFFFFF}
+.bg-grey{background-color: #eeeeee}

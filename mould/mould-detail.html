@@ -2,7 +2,7 @@
 <!-- saved from url=(0014)about:internet -->
 <html>
 <head>
-    <title>账户余额</title>
+    <title>模板：“模板名”</title>
     <meta charset="utf-8">
     <link rel="shortcut icon" href="../images/icon/favicon.ico">
     <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
@@ -11,54 +11,13 @@
     <meta name="renderer" content="webkit"><!--360使用webkit内核-->
     <meta http-equiv="Cache-Control" content="no-siteapp"><!--禁止百度转码-->
     <meta name="keywords" content="印刷 平台 创意 服务" />
-    <link rel="shortcut icon" href="images/icon/favicon.ico">
+    <link rel="shortcut icon" href="../images/icon/favicon.ico">
     <link rel="stylesheet" type="text/css" href="../style/reset.css">
     <link rel="stylesheet" type="text/css" href="../style/main.css">
-    <link rel="stylesheet" type="text/css" href="style/user.css">
-    <link rel="stylesheet" type="text/css" href="style/user-order.css">
-
-    <style type="text/css">
-        .title-line span
-        {
-            position: relative;
-            top:15px;
-        }
-        
-        .title-line ul
-        {
-            list-style:none; /* 去掉ul前面的符号 */
-            margin: 0px; /* 与外界元素的距离为0 */
-            padding: 0px; /* 与内部元素的距离为0 */
-            width: auto; /* 宽度根据元素内容调整 */
-        }
-        /* 所有class为menu的div中的ul中的li样式 */
-        .title-line ul li
-        {
-            height: 50px;
-            float:left; /* 向左漂移，将竖排变为横排 */
-            width: 200px;
-        }
-        .title-line ul li div
-        {
-            height: 50px;
-            width: 200px;
-            text-align: center;
-            line-height:50px;
-        }
-        .title-line ul li:hover
-        {
-            background-color:#dddddd ;
-        }
-        td{padding:5px 0;}
-    </style>
-    <style>
-        #wrapper {margin: 20px auto;}
-        #wrapper .input_check {position: absolute;width: 100px;height: 50px;visibility: hidden;}
-        #wrapper label{width: 100px;text-align: center;height: 50px;line-height:50px;   }
-        #wrapper span {position: relative;}
-        #wrapper .input_check+label {display: inline-block;width: 100px;height: 50px;background: url(../images/checkbox.png) no-repeat;}
-        #wrapper .input_check:checked+label {background-position: -96px;}
-    </style>
+    <link rel="stylesheet" type="text/css" href="../style/mould.css">
+<style type="text/css">
+    
+</style>
 </head>
 <body>
 <div id="headerBar">
@@ -238,102 +197,122 @@
     <div class="breadCrumbs">
         <a href="../index.html">首页</a>
         <span>></span>
-        <span><a href="user-main.html">个人中心</a></span><span>></span>
-        <span><a href="user-balance.html">账户余额</a></span>
+        <span><a href="javascript:void(0)">模板中心</a></span><span>></span>
+        <span>“模板名”</span>
     </div>
-    <!--通用订单左侧菜单栏-->
-    <div class="leftList fl">
-        <div class="menu">
-            <dl class="fore1">
-                <dd>交易管理</dd>
-                <dt><a href="user-order.html" >我的订单</a></dt>
-            </dl>
-            <dl class="fore2">
-                <dd>模板管理</dd>
-                <dt><a href="javascript:void(0)">我的模板</a></dt>
-                <dt><a href="javascript:void(0)">我的收藏</a></dt>
-            </dl>
-            <dl class="fore3">
-                <dd>账户管理</dd>
-                <dt><a href="user-balance.html">账户余额</a></dt>
-                <dt><a href="user-point.html" >我的积分</a></dt>
-                <dt><a href="user-coupon-notice.html">优惠券</a></dt>
-            </dl>
-            <dl class="fore4">
-                <dd>个人资料设置</dd>
-                <dt><a href="user-basicInfor.html.html">修改基本信息</a></dt>
-                <dt><a href="javascript:void(0)">修改密码</a></dt>
-                <dt><a href="user-address.html">我的收货地址</a></dt>
-            </dl>
-            <dl class="fore5">
-                <dd>消息提醒</dd>
-                <dt><a href="javascript:void(0)" class="active">系统通知</a></dt>
-                <dt><a href="javascript:void(0)">账户公告</a></dt>
-                <dt><a href="javascript:void(0)">优惠卷通知</a></dt>
-            </dl>
-            <dl class="fore6">
-                <dd><a href="javascript:void(0)">我的文件</a></dd>
-            </dl>
-        </div>
-    </div>
-    <!--订单内容右侧部分开始-->
-    <div class="rightArea fl">
-        <div class="myOrder">
-            <div class="title-line">
-                <ul >
-                    <li><a href="user-basicInfor.html.html"><div>基本信息</div></a></li>
-                    <li><a href="user-safeInfor.html"><div>安全信息</div></a></li>
-                    <li><a href="user-address.html"><div>收货地址</div></a></li>
-                </ul>
-            </div>
-            <div class="order-content">
-                <div class="order-listbox">
-                    <div class="order-listbox-titleline" style="background: #FFFFFF;">
-                        <h4>基本信息</h4>
+    <table class="mould-detail-main-table">
+        <tr>
+            <td width="340px">
+                <div class="bg-white mould-detail-img-box">
+                    <div class="mould-detail-img">
+                        <img src="../images/mould/mould02.jpg" alt="">
                     </div>
-                    <table style="width: 100%">
+                </div>
+            </td>
+            <td width="900px">
+                <div class="mould-detail-box">
+                    <table class="mould-detail-table">
                         <tr>
-                            <td>昵称：</td>
-                            <td width="600px"><input type="text"></td>
-                            <td rowspan="5"><div style="width: 200px;height: 300px;background: lightgrey">头像插件</div></td>
+                            <td>模板名称</td><td class="mao">：</td>
+                            <td>xxxxx</td>
                         </tr>
                         <tr>
-                            <td>性别：</td>
-                            <td>
-                                <input type="radio" checked="checked" name="Sex" value="male" />男&nbsp;&nbsp;
-                                <input type="radio" name="Sex" value="female" />女
-                            </td>
+                            <td>模板编号</td><td class="mao">：</td>
+                            <td>256256</td>
                         </tr>
                         <tr>
-                            <td>行业：</td>
-                            <td><select name="select" id="select_k1" class="xla">
-                                <option value="行业">行业</option>
-                                <option value="行业1">行业1</option>
-                                <option value="行业2">行业2</option>
-                            </select></td>
+                            <td>建议尺寸</td><td class="mao">：</td>
+                            <td>60*90cm</td>
                         </tr>
                         <tr>
-                            <td >偏好：</td>
-                            <td><small>请选择您常用的分类，给您最精确的推荐</small></td>
+                            <td>建议物料</td><td class="mao">：</td>
+                            <td>海报、KT板画面</td>
                         </tr>
                         <tr>
-                            <td ></td>
-                            <td style="vertical-align:top">
-                                <div id="wrapper" style="margin: 0">
-                                    <span><input type="checkbox"class="input_check" id="check1"><label for="check1">扁平</label></span>
-                                    <span><input type="checkbox"class="input_check" id="check2"><label for="check2">极简</label></span>
-                                    <span><input type="checkbox"class="input_check" id="check3"><label for="check3">多彩</label></span>
-                                    <span><input type="checkbox"class="input_check" id="check4"><label for="check4">商务</label></span><br>
-                                    <span><input type="checkbox"class="input_check" id="check5"><label for="check5">中式</label></span>
-                                    <span><input type="checkbox"class="input_check" id="check6"><label for="check6">欧式</label></span>
-                                </div>
-                            </td>
+                            <td>文件格式</td><td class="mao">：</td>
+                            <td>PSD文件</td>
+                        </tr>
+                        <tr>
+                            <td>颜色模式</td><td class="mao">：</td>
+                            <td>CMYK模式</td>
+                        </tr>
+                        <tr>
+                            <td>分辨率</td><td class="mao">：</td>
+                            <td>300dpi</td>
+                        </tr>
+                        <tr>
+                            <td>文件大小</td><td class="mao">：</td>
+                            <td>10.41M</td>
                         </tr>
                     </table>
+                    <div>
+                        <table class="mould-detail-table" style="border-top:solid #ddd;border-bottom:dashed #333;border-width: thin;" >
+                            <tr>
+                                <td rowspan="4" style="padding-right: 20px; ">注意事项</td>
+                                <td>1.模板尺寸在自主设计时不可更改</td>
+                            </tr>
+                            <tr>
+                                <td  >2.如需要使用模板制作另外的物料，请下单给设计师进行设计</td>
+                            </tr>
+                            <tr>
+                                <td  >3.单独购买模板只能使用余额购买</td>
+                            </tr>
+                            <tr>
+                                <td  >4.用模板进行下单时，模板免费赠送</td>
+                            </tr>
+                        </table>
+                        <button class="btn-main">立即制作</button>
+                        <button class="btn-unmain">仅购买模板</button>
+                    </div>
                 </div>
-            </div>
+            </td>
+        </tr>
+    </table>
+    <div class="floorFour comWidth">
+        <div class="floor_title">
+            <p>您可能还需要</p>
+            <a href="#" class="more">更多</a>
         </div>
+        <ul class="floor_list">
+            <li>
+                <a href="" ><img src="../images/list/gift01.png"></a>
+                <div class="list_title">
+                    <p class="text_href">
+                        <a href="#" target="_blank">珠光纸名片</a>
+                        <span>￥20.00元</span>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <a href="" ><img src="../images/list/gift02.png"></a>
+                <div class="list_title">
+                    <p class="text_href">
+                        <a href="#" target="_blank">珠光纸名片</a>
+                        <span>￥20.00元</span>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <a href="" ><img src="../images/list/gift03.png"></a>
+                <div class="list_title">
+                    <p class="text_href">
+                        <a href="#" target="_blank">珠光纸名片</a>
+                        <span>￥20.00元</span>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <a href="" ><img src="../images/list/gift04.png"></a>
+                <div class="list_title">
+                    <p class="text_href">
+                        <a href="#" target="_blank">珠光纸名片</a>
+                        <span>￥20.00元</span>
+                    </p>
+                </div>
+            </li>
+        </ul>
     </div>
+
 </div>
 <footer>
     <div class="comWidth">
@@ -351,12 +330,4 @@
 <script src="../lib/jquery-3.1.0.min.js"></script>
 <script type="text/javascript" src='../js/public.js'></script>
 <script src="../lib/layer/layer.js"></script>
-<script src="js/user-order.js"></script>
-<script>
-
-    $(document).ready(function(){
-        //对账户余额进行金额格式设置
-
-    })
-</script>
 </html>

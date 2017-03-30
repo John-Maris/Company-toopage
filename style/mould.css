@@ -1,0 +1,54 @@
+.mould-detail-main-table td{
+    vertical-align: top;
+}
+.mould-detail-table{
+    margin: 20px 0px;
+    padding: 20px 0;
+}
+.mould-detail-table td{
+    padding: 0 0px 10px 0;
+}
+.mould-detail-table .mao{
+    padding: 0 20px 10px 0;
+}
+.mould-detail-box{
+    margin-top: 10px;
+    margin-left: 80px;
+}
+.mould-detail-img-box{
+    margin-top: 10px;
+}
+.mould-detail-img{
+    width: 300px;
+    padding:30px 20px;
+    max-height: 800px;
+    overflow: hidden;
+}
+.mould-detail-img img{
+    width: 300px;
+}
+.mould-detail-box button{
+    width: 200px;
+    height: 50px;
+    border: none;
+    margin-right: 40px;
+    font-size: larger;
+    font-family: "Microsoft Yahei", "黑体", "微软雅黑";
+    border-radius: 5px;
+}
+.btn-main{
+    background-color: #e46414;
+    color: #fff;
+}
+.btn-unmain{
+    background-color: #aec2d7;
+    color: #23598f;
+}
+.btn{
+    width: 200px;
+    height: 50px;
+    border: none;
+    font-size: larger;
+    font-family: "Microsoft Yahei", "黑体", "微软雅黑";
+    border-radius: 5px;
+}
